@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="f7b2e6a1-8897-4495-96ed-8e452ebfb1ff" name="C278249@USE2DEVP00496 2022-07-27 15:52:15" runUser="EAD\C278249" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-07-27T15:52:15.9562839+05:30" queuing="2022-07-27T15:52:15.9562839+05:30" start="2022-07-27T15:48:36.3046159+05:30" finish="2022-07-27T15:56:25.9296340+05:30" />
+  <TestSettings name="default" id="cc569011-6e2f-4a49-87a5-66a88d63601f">
+    <Deployment runDeploymentRoot="C278249_USE2DEVP00496_2022-07-27_15_52_15" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="79e23eab-7be0-4266-ab2f-f0d3430b01cc" testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" testName="Verify sort by filter options retry #1" computerName="USE2DEVP00496" duration="00:03:27.3766971" startTime="2022-07-27T15:52:15.9302886+05:30" endTime="2022-07-27T15:55:43.3069857+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79e23eab-7be0-4266-ab2f-f0d3430b01cc">
+      <Output>
+        <StdOut>-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; error: The HTTP request to the remote WebDriver server for URL http://localhost:52525/session/a0196bdb2b1aa423d5556dfd4e09ca43/url timed out after 60 seconds. (60.0s)&#xD;
+&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+&#xD;
+-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+-&gt; OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:52525/session/a0196bdb2b1aa423d5556dfd4e09ca43/screenshot timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+-&gt;    at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+-&gt; --- End of stack trace from previous location where exception was thrown ---&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+-&gt;    at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+-&gt;    --- End of inner exception stack trace ---&#xD;
+-&gt;    at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+-&gt;    at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+-&gt;    at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+-&gt;    at OpenQA.Selenium.WebDriver.GetScreenshot()&#xD;
+-&gt;    at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 112&#xD;
+-&gt;    at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 46</StdOut>
+        <StdErr>The HTTP request to the remote WebDriver server for URL http://localhost:52525/session/a0196bdb2b1aa423d5556dfd4e09ca43/url timed out after 60 seconds. -&gt; A task was canceled.&#xD;
+OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:52525/session/a0196bdb2b1aa423d5556dfd4e09ca43/url timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   --- End of inner exception stack trace ---&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.set_Url(String value)&#xD;
+   at OpenQA.Selenium.Navigator.GoToUrl(String url)&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.GoToUrl(String url) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\NavigationExtensions.cs:line 9&#xD;
+   at SnapDealTestProject.Pages.HomePage.NavigateToApplication() in C:\BDDPracticeFramework\SnapDealTestProject\Pages\HomePage.cs:line 21&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.GivenIOpenSnapDealSite() in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 28&#xD;
+   at lambda_method(Closure , IContextManager )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StdErr>
+        <ErrorInfo>
+          <Message>The HTTP request to the remote WebDriver server for URL http://localhost:52525/session/a0196bdb2b1aa423d5556dfd4e09ca43/url timed out after 60 seconds. -&gt; A task was canceled.</Message>
+          <StackTrace>OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:52525/session/a0196bdb2b1aa423d5556dfd4e09ca43/url timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   --- End of inner exception stack trace ---&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.set_Url(String value)&#xD;
+   at OpenQA.Selenium.Navigator.GoToUrl(String url)&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.GoToUrl(String url) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\NavigationExtensions.cs:line 9&#xD;
+   at SnapDealTestProject.Pages.HomePage.NavigateToApplication() in C:\BDDPracticeFramework\SnapDealTestProject\Pages\HomePage.cs:line 21&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.GivenIOpenSnapDealSite() in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 28&#xD;
+   at lambda_method(Closure , IContextManager )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6f1f9bd3-60e9-45c8-b064-64ae665f6149" testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" testName="Verify sort by filter options" computerName="USE2DEVP00496" duration="00:03:38.0446632" startTime="2022-07-27T15:48:37.8826202+05:30" endTime="2022-07-27T15:52:15.9272834+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f1f9bd3-60e9-45c8-b064-64ae665f6149">
+      <Output>
+        <StdOut>-&gt; -&gt; Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll&#xD;
+-&gt; -&gt; Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\ReportPortal.SpecFlowPlugin.dll&#xD;
+-&gt; -&gt; Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SpecRun.Runtime.SpecFlowPlugin.dll&#xD;
+-&gt; -&gt; Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+-&gt; -&gt; Using default config&#xD;
+&#xD;
+&#xD;
+-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (5.0s)&#xD;
+&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (0.4s)&#xD;
+&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; error: The HTTP request to the remote WebDriver server for URL http://localhost:52326/session/1a7f7a95978fd9ec45a8355e03feb499/element/45dcd03f-31ec-46ee-83ec-55006eaabb7f/click timed out after 60 seconds. (63.4s)&#xD;
+&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+&#xD;
+-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+-&gt; OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:52326/session/1a7f7a95978fd9ec45a8355e03feb499/screenshot timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+-&gt;    at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+-&gt; --- End of stack trace from previous location where exception was thrown ---&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+-&gt;    at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+-&gt;    at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+-&gt;    --- End of inner exception stack trace ---&#xD;
+-&gt;    at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+-&gt;    at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+-&gt;    at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+-&gt;    at OpenQA.Selenium.WebDriver.GetScreenshot()&#xD;
+-&gt;    at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 112&#xD;
+-&gt;    at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 46</StdOut>
+        <StdErr>The HTTP request to the remote WebDriver server for URL http://localhost:52326/session/1a7f7a95978fd9ec45a8355e03feb499/element/45dcd03f-31ec-46ee-83ec-55006eaabb7f/click timed out after 60 seconds. -&gt; A task was canceled.&#xD;
+OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:52326/session/1a7f7a95978fd9ec45a8355e03feb499/element/45dcd03f-31ec-46ee-83ec-55006eaabb7f/click timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   --- End of inner exception stack trace ---&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StdErr>
+        <ErrorInfo>
+          <Message>The HTTP request to the remote WebDriver server for URL http://localhost:52326/session/1a7f7a95978fd9ec45a8355e03feb499/element/45dcd03f-31ec-46ee-83ec-55006eaabb7f/click timed out after 60 seconds. -&gt; A task was canceled.</Message>
+          <StackTrace>OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:52326/session/1a7f7a95978fd9ec45a8355e03feb499/element/45dcd03f-31ec-46ee-83ec-55006eaabb7f/click timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   --- End of inner exception stack trace ---&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7d234e9e-80d0-45ac-bfd8-c3040013605d" testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" testName="Verify sort by filter options retry #2" computerName="USE2DEVP00496" duration="00:00:25.4893664" startTime="2022-07-27T15:55:43.3079845+05:30" endTime="2022-07-27T15:56:08.7973509+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d234e9e-80d0-45ac-bfd8-c3040013605d">
+      <Output>
+        <StdOut>-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (4.7s)&#xD;
+&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (0.5s)&#xD;
+&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; error: unknown error: unexpected command response
+-&gt;   (Session info: chrome=103.0.5060.134) (7.5s)&#xD;
+&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+&#xD;
+-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject</StdOut>
+        <StdErr>unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+OpenQA.Selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StdErr>
+        <ErrorInfo>
+          <Message>unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)</Message>
+          <StackTrace>OpenQA.Selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="eeb277a9-bdf7-4bec-899d-6bb5c8e1c005" testId="5aa3b06b-e2be-7749-d3da-14f08b01673d" testName="Verify SnapDeal home page has all neceesary icons" computerName="USE2DEVP00496" duration="00:00:12.8164224" startTime="2022-07-27T15:56:08.8003682+05:30" endTime="2022-07-27T15:56:21.6167906+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eeb277a9-bdf7-4bec-899d-6bb5c8e1c005">
+      <Output>
+        <StdOut>-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (4.5s)&#xD;
+&#xD;
+Then I verify the icons displayed on the home page&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifyTheIconsDisplayedOnTheHomePage() (1.7s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Verify sort by filter options in SnapDeal" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="2a1227ee-0a5c-a262-1ccf-c7088f61db43">
+      <Execution id="6f1f9bd3-60e9-45c8-b064-64ae665f6149" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://specrun/executorV3.9.31" className="SnapDealTestProject.SnapDeal" name="#()::TestAssembly:SnapDealTestProject/Feature:SnapDeal/Scenario:Verify+sort+by+filter+options" />
+    </UnitTest>
+    <UnitTest name="Verify SnapDeal home page has all neceesary icons in SnapDeal" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="5aa3b06b-e2be-7749-d3da-14f08b01673d">
+      <Execution id="eeb277a9-bdf7-4bec-899d-6bb5c8e1c005" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://specrun/executorV3.9.31" className="SnapDealTestProject.SnapDeal" name="#()::TestAssembly:SnapDealTestProject/Feature:SnapDeal/Scenario:Verify+SnapDeal+home+page+has+all+neceesary+icons" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" executionId="79e23eab-7be0-4266-ab2f-f0d3430b01cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" executionId="6f1f9bd3-60e9-45c8-b064-64ae665f6149" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" executionId="7d234e9e-80d0-45ac-bfd8-c3040013605d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5aa3b06b-e2be-7749-d3da-14f08b01673d" executionId="eeb277a9-bdf7-4bec-899d-6bb5c8e1c005" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="1" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>SpecFlow+Runner execution started&#xD;
+SpecFlow+Runner 3.9.31 in Framework clr40 in x86 mode execution started&#xD;
+TestAdapter Location: C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\TechTalk.SpecRun.VisualStudio.TestAdapter.dll&#xD;
+Current UserName: 'C278249', MachineName: 'USE2DEVP00496'&#xD;
+SpecRun: running tests in C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+Output folder configured to "C:\BDDPracticeFramework\SnapDealTestProject\TestResults" (default)&#xD;
+Profile: &#xD;
+Log file path: C:\BDDPracticeFramework\SnapDealTestProject\TestResults\Unnamed project__2022-07-27T154836.log&#xD;
+Checking activation&#xD;
+Activation check completed&#xD;
+Starting test run&#xD;
+Discovering target: Default&#xD;
+Discovering tests from assembly: C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+Discovered tests from assembly: C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+Scenario: Verify sort by filter options in SnapDeal -&gt; Failed on thread #0&#xD;
+Scenario: Verify sort by filter options in SnapDeal -&gt; Failed on thread #0&#xD;
+Scenario: Verify sort by filter options in SnapDeal -&gt; Failed on thread #0&#xD;
+Scenario: Verify SnapDeal home page has all neceesary icons in SnapDeal -&gt; Succeeded on thread #0&#xD;
+test run finished&#xD;
+publishing test results&#xD;
+test results published&#xD;
+generating reports&#xD;
+Starting external report generation process&#xD;
+Successfully generated reports.&#xD;
+Successfully generated reports&#xD;
+Result: 1 failed&#xD;
+  Total: 2 (test executions: 4)&#xD;
+  Succeeded: 1&#xD;
+  Ignored: 0&#xD;
+  Pending: 0&#xD;
+  Skipped: 0&#xD;
+  Failed: 1&#xD;
+&#xD;
+  Execution Time: 00:07:45.3110237&#xD;
+Report file: file:///C:/BDDPracticeFramework/SnapDealTestProject/TestResults/Unnamed%20project__2022-07-27T154836.html&#xD;
+Adding attachments to VSTest&#xD;
+adding Test Execution Report 'C:\BDDPracticeFramework\SnapDealTestProject\TestResults\Unnamed project__2022-07-27T154836.html'&#xD;
+Log file: file:///C:/BDDPracticeFramework/SnapDealTestProject/TestResults/Unnamed%20project__2022-07-27T154836.log&#xD;
+SpecFlow+Runner execution finished&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="USE2DEVP00496" outcome="Error" timestamp="2022-07-27T15:52:15.9402837+05:30">
+        <Text>	[ERROR] The HTTP request to the remote WebDriver server for URL http://localhost:52326/session/1a7f7a95978fd9ec45a8355e03feb499/element/45dcd03f-31ec-46ee-83ec-55006eaabb7f/click timed out after 60 seconds. -&gt; A task was canceled.</Text>
+      </RunInfo>
+      <RunInfo computerName="USE2DEVP00496" outcome="Error" timestamp="2022-07-27T15:55:43.3079845+05:30">
+        <Text>	[ERROR] The HTTP request to the remote WebDriver server for URL http://localhost:52525/session/a0196bdb2b1aa423d5556dfd4e09ca43/url timed out after 60 seconds. -&gt; A task was canceled.</Text>
+      </RunInfo>
+      <RunInfo computerName="USE2DEVP00496" outcome="Error" timestamp="2022-07-27T15:56:08.8013482+05:30">
+        <Text>	[ERROR] unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)</Text>
+      </RunInfo>
+    </RunInfos>
+    <ResultFiles>
+      <ResultFile path="USE2DEVP00496\Unnamed project__2022-07-27T154836.log" />
+      <ResultFile path="USE2DEVP00496\Unnamed project__2022-07-27T154836.html" />
+    </ResultFiles>
+  </ResultSummary>
+</TestRun>

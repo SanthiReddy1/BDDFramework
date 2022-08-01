@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="cebbebbc-088b-4ada-9d95-93fb8d436392" name="C278249@USE2DEVP00496 2022-07-27 10:15:40" runUser="EAD\C278249" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-07-27T10:15:40.3998093+05:30" queuing="2022-07-27T10:15:40.3998093+05:30" start="2022-07-27T10:15:27.8589008+05:30" finish="2022-07-27T10:16:31.4275734+05:30" />
+  <TestSettings name="default" id="9a1bb41f-8371-42a2-bb8f-2ee487c13469">
+    <Deployment runDeploymentRoot="C278249_USE2DEVP00496_2022-07-27_10_15_40" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="7845abe5-2e7c-4d07-9997-9733353bebc3" testId="0c14bfb0-219d-c933-8de7-3315f1dd063d" testName="VerifySortByFilterOptions" computerName="USE2DEVP00496" duration="00:00:10.2900000" startTime="2022-07-27T10:15:29.7458142+05:30" endTime="2022-07-27T10:15:40.0358084+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7845abe5-2e7c-4d07-9997-9733353bebc3">
+      <Output>
+        <StdOut>-&gt; warning: The previous ScenarioContext was not disposed.&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+-&gt; error: session not created&#xD;
+from tab crashed&#xD;
+  (Session info: chrome=103.0.5060.134) (SessionNotCreated) (10.1s)&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+System.NullReferenceException: Object reference not set to an instance of an object.&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 112&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 46&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)</StdOut>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : session not created&#xD;
+from tab crashed&#xD;
+  (Session info: chrome=103.0.5060.134) (SessionNotCreated)</Message>
+          <StackTrace>   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)&#xD;
+   at OpenQA.Selenium.Chromium.ChromiumDriver..ctor(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.InitializeChromeDriver() in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 84&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.InitializeWebDriver() in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 34&#xD;
+   at SnapDealTestProject.Hooks.Base.BeforeScenario(ScenarioContext scenarioContext, QualityTestCase QualityTestCase) in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 31&#xD;
+   at lambda_method(Closure , IContextManager , ScenarioContext , QualityTestCase )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="403f2918-b03d-4e0f-88de-845a5f74d7f3" testId="cf572abd-d502-d2e0-ce09-3b856bfce869" testName="VerifySnapDealHomePageHasAllNeceesaryIcons" computerName="USE2DEVP00496" duration="00:01:01.1280000" startTime="2022-07-27T10:15:29.7458142+05:30" endTime="2022-07-27T10:16:30.8735709+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="403f2918-b03d-4e0f-88de-845a5f74d7f3">
+      <Output>
+        <StdOut>path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+-&gt; error: The HTTP request to the remote WebDriver server for URL http://localhost:52945/session timed out after 60 seconds. (61.1s)&#xD;
+-&gt; error: The HTTP request to the remote WebDriver server for URL http://localhost:52945/session timed out after 60 seconds. (61.1s)&#xD;
+-&gt; warning: The previous ScenarioContext was already disposed.&#xD;
+-&gt; warning: The previous ScenarioContext was already disposed.</StdOut>
+        <ErrorInfo>
+          <Message>System.ArgumentNullException : Value cannot be null.&#xD;
+Parameter name: ScenarioContext&#xD;
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.HandleBlockSwitch(ScenarioBlock block)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.Step(StepDefinitionKeyword stepDefinitionKeyword, String keyword, String text, String multilineTextArg, Table tableArg)&#xD;
+   at TechTalk.SpecFlow.TestRunner.Given(String text, String multilineTextArg, Table tableArg, String keyword)&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySnapDealHomePageHasAllNeceesaryIcons() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 15&#xD;
+--TearDown&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()&#xD;
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.TestTearDown()</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="VerifySnapDealHomePageHasAllNeceesaryIcons" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="cf572abd-d502-d2e0-ce09-3b856bfce869">
+      <Execution id="403f2918-b03d-4e0f-88de-845a5f74d7f3" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SnapDealFeature" name="VerifySnapDealHomePageHasAllNeceesaryIcons" />
+    </UnitTest>
+    <UnitTest name="VerifySortByFilterOptions" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="0c14bfb0-219d-c933-8de7-3315f1dd063d">
+      <Execution id="7845abe5-2e7c-4d07-9997-9733353bebc3" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SnapDealFeature" name="VerifySortByFilterOptions" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="0c14bfb0-219d-c933-8de7-3315f1dd063d" executionId="7845abe5-2e7c-4d07-9997-9733353bebc3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf572abd-d502-d2e0-ce09-3b856bfce869" executionId="403f2918-b03d-4e0f-88de-845a5f74d7f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="0" failed="2" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.1.0.0: Test execution started&#xD;
+Running all tests in C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+   NUnit3TestExecutor discovered 2 of 2 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+-&gt; warning: The previous ScenarioContext was not disposed.&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+-&gt; error: session not created&#xD;
+from tab crashed&#xD;
+  (Session info: chrome=103.0.5060.134) (SessionNotCreated) (10.1s)&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+System.NullReferenceException: Object reference not set to an instance of an object.&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 112&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 46&#xD;
+-&gt; error: Object reference not set to an instance of an object. (0.0s)&#xD;
+&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+-&gt; error: The HTTP request to the remote WebDriver server for URL http://localhost:52945/session timed out after 60 seconds. (61.1s)&#xD;
+-&gt; error: The HTTP request to the remote WebDriver server for URL http://localhost:52945/session timed out after 60 seconds. (61.1s)&#xD;
+-&gt; warning: The previous ScenarioContext was already disposed.&#xD;
+-&gt; warning: The previous ScenarioContext was already disposed.&#xD;
+&#xD;
+NUnit Adapter 4.1.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

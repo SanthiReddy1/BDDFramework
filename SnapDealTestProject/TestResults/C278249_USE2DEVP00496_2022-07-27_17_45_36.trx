@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="1b413922-9869-43d9-aaba-2d551340b7c3" name="C278249@USE2DEVP00496 2022-07-27 17:45:36" runUser="EAD\C278249" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-07-27T17:45:36.6646806+05:30" queuing="2022-07-27T17:45:36.6646806+05:30" start="2022-07-27T17:45:15.7145745+05:30" finish="2022-07-27T17:46:25.2735173+05:30" />
+  <TestSettings name="default" id="7048b575-de0e-4616-9ad8-b0f5b8743cac">
+    <Deployment runDeploymentRoot="C278249_USE2DEVP00496_2022-07-27_17_45_36" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="8efb3fa8-dbfe-4af3-8f65-05a5ad91333f" testId="5aa3b06b-e2be-7749-d3da-14f08b01673d" testName="Verify SnapDeal home page has all neceesary icons" computerName="USE2DEVP00496" duration="00:00:11.9229932" startTime="2022-07-27T17:46:10.4135280+05:30" endTime="2022-07-27T17:46:22.3365212+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8efb3fa8-dbfe-4af3-8f65-05a5ad91333f">
+      <Output>
+        <StdOut>-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (5.4s)&#xD;
+&#xD;
+Then I verify the icons displayed on the home page&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifyTheIconsDisplayedOnTheHomePage() (2.1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f6467da8-1fff-494a-9c61-8500ec952b02" testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" testName="Verify sort by filter options retry #1" computerName="USE2DEVP00496" duration="00:00:18.0526985" startTime="2022-07-27T17:45:36.6376811+05:30" endTime="2022-07-27T17:45:54.6903796+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f6467da8-1fff-494a-9c61-8500ec952b02">
+      <Output>
+        <StdOut>-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (5.0s)&#xD;
+&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (0.4s)&#xD;
+&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; error: unknown error: cannot determine loading status
+-&gt; from unknown error: unexpected command response
+-&gt;   (Session info: chrome=103.0.5060.134) (6.4s)&#xD;
+&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+&#xD;
+-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject</StdOut>
+        <StdErr>unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+OpenQA.Selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StdErr>
+        <ErrorInfo>
+          <Message>unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)</Message>
+          <StackTrace>OpenQA.Selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="36e2e197-38cc-4464-b170-36e8d3992ecf" testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" testName="Verify sort by filter options" computerName="USE2DEVP00496" duration="00:00:19.1681082" startTime="2022-07-27T17:45:17.4665728+05:30" endTime="2022-07-27T17:45:36.6346810+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36e2e197-38cc-4464-b170-36e8d3992ecf">
+      <Output>
+        <StdOut>-&gt; -&gt; Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll&#xD;
+-&gt; -&gt; Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\ReportPortal.SpecFlowPlugin.dll&#xD;
+-&gt; -&gt; Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SpecRun.Runtime.SpecFlowPlugin.dll&#xD;
+-&gt; -&gt; Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+-&gt; -&gt; Using default config&#xD;
+&#xD;
+&#xD;
+-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (5.3s)&#xD;
+&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (1.3s)&#xD;
+&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; error: unknown error: cannot determine loading status
+-&gt; from unknown error: unexpected command response
+-&gt;   (Session info: chrome=103.0.5060.134) (5.7s)&#xD;
+&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+&#xD;
+-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject</StdOut>
+        <StdErr>unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+OpenQA.Selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StdErr>
+        <ErrorInfo>
+          <Message>unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)</Message>
+          <StackTrace>OpenQA.Selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f2dff863-9a90-43ef-9199-ceb0280acc61" testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" testName="Verify sort by filter options retry #2" computerName="USE2DEVP00496" duration="00:00:15.7201471" startTime="2022-07-27T17:45:54.6913802+05:30" endTime="2022-07-27T17:46:10.4115273+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2dff863-9a90-43ef-9199-ceb0280acc61">
+      <Output>
+        <StdOut>-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (5.1s)&#xD;
+&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (1.0s)&#xD;
+&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; error: unknown error: cannot determine loading status
+-&gt; from unknown error: unexpected command response
+-&gt;   (Session info: chrome=103.0.5060.134) (2.3s)&#xD;
+&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+&#xD;
+-&gt; path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+-&gt; OpenQA.Selenium.WebDriverException: unknown error: cannot determine loading status
+-&gt; from unknown error: unexpected command response
+-&gt;   (Session info: chrome=103.0.5060.134)&#xD;
+-&gt;    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+-&gt;    at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+-&gt;    at OpenQA.Selenium.WebDriver.GetScreenshot()&#xD;
+-&gt;    at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 112&#xD;
+-&gt;    at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 46</StdOut>
+        <StdErr>unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+OpenQA.Selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StdErr>
+        <ErrorInfo>
+          <Message>unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)</Message>
+          <StackTrace>OpenQA.Selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)&#xD;
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\BDDPracticeFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\BDDPracticeFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at ReportPortal.SpecFlowPlugin.SafeBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)&#xD;
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Verify sort by filter options in SnapDeal" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="2a1227ee-0a5c-a262-1ccf-c7088f61db43">
+      <Execution id="36e2e197-38cc-4464-b170-36e8d3992ecf" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://specrun/executorV3.9.31" className="SnapDealTestProject.SnapDeal" name="#()::TestAssembly:SnapDealTestProject/Feature:SnapDeal/Scenario:Verify+sort+by+filter+options" />
+    </UnitTest>
+    <UnitTest name="Verify SnapDeal home page has all neceesary icons in SnapDeal" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="5aa3b06b-e2be-7749-d3da-14f08b01673d">
+      <Execution id="8efb3fa8-dbfe-4af3-8f65-05a5ad91333f" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://specrun/executorV3.9.31" className="SnapDealTestProject.SnapDeal" name="#()::TestAssembly:SnapDealTestProject/Feature:SnapDeal/Scenario:Verify+SnapDeal+home+page+has+all+neceesary+icons" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="5aa3b06b-e2be-7749-d3da-14f08b01673d" executionId="8efb3fa8-dbfe-4af3-8f65-05a5ad91333f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" executionId="f6467da8-1fff-494a-9c61-8500ec952b02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" executionId="36e2e197-38cc-4464-b170-36e8d3992ecf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a1227ee-0a5c-a262-1ccf-c7088f61db43" executionId="f2dff863-9a90-43ef-9199-ceb0280acc61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="1" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>SpecFlow+Runner execution started&#xD;
+SpecFlow+Runner 3.9.31 in Framework clr40 in x86 mode execution started&#xD;
+TestAdapter Location: C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\TechTalk.SpecRun.VisualStudio.TestAdapter.dll&#xD;
+Current UserName: 'C278249', MachineName: 'USE2DEVP00496'&#xD;
+SpecRun: running tests in C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+Output folder configured to "C:\BDDPracticeFramework\SnapDealTestProject\TestResults" (default)&#xD;
+Profile: &#xD;
+Log file path: C:\BDDPracticeFramework\SnapDealTestProject\TestResults\Unnamed project__2022-07-27T174516.log&#xD;
+Checking activation&#xD;
+Activation check completed&#xD;
+Starting test run&#xD;
+Discovering target: Default&#xD;
+Discovering tests from assembly: C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+Discovered tests from assembly: C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+Scenario: Verify sort by filter options in SnapDeal -&gt; Failed on thread #0&#xD;
+Scenario: Verify sort by filter options in SnapDeal -&gt; Failed on thread #0&#xD;
+Scenario: Verify sort by filter options in SnapDeal -&gt; Failed on thread #0&#xD;
+Scenario: Verify SnapDeal home page has all neceesary icons in SnapDeal -&gt; Succeeded on thread #0&#xD;
+test run finished&#xD;
+publishing test results&#xD;
+test results published&#xD;
+generating reports&#xD;
+Starting external report generation process&#xD;
+Successfully generated reports.&#xD;
+Successfully generated reports&#xD;
+Result: 1 failed&#xD;
+  Total: 2 (test executions: 4)&#xD;
+  Succeeded: 1&#xD;
+  Ignored: 0&#xD;
+  Pending: 0&#xD;
+  Skipped: 0&#xD;
+  Failed: 1&#xD;
+&#xD;
+  Execution Time: 00:01:06.5189491&#xD;
+Report file: file:///C:/BDDPracticeFramework/SnapDealTestProject/TestResults/Unnamed%20project__2022-07-27T174516.html&#xD;
+Adding attachments to VSTest&#xD;
+adding Test Execution Report 'C:\BDDPracticeFramework\SnapDealTestProject\TestResults\Unnamed project__2022-07-27T174516.html'&#xD;
+Log file: file:///C:/BDDPracticeFramework/SnapDealTestProject/TestResults/Unnamed%20project__2022-07-27T174516.log&#xD;
+SpecFlow+Runner execution finished&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="USE2DEVP00496" outcome="Error" timestamp="2022-07-27T17:45:36.6496789+05:30">
+        <Text>	[ERROR] unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)</Text>
+      </RunInfo>
+      <RunInfo computerName="USE2DEVP00496" outcome="Error" timestamp="2022-07-27T17:45:54.6913802+05:30">
+        <Text>	[ERROR] unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)</Text>
+      </RunInfo>
+      <RunInfo computerName="USE2DEVP00496" outcome="Error" timestamp="2022-07-27T17:46:10.4125277+05:30">
+        <Text>	[ERROR] unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)</Text>
+      </RunInfo>
+    </RunInfos>
+    <ResultFiles>
+      <ResultFile path="USE2DEVP00496\Unnamed project__2022-07-27T174516.log" />
+      <ResultFile path="USE2DEVP00496\Unnamed project__2022-07-27T174516.html" />
+    </ResultFiles>
+  </ResultSummary>
+</TestRun>

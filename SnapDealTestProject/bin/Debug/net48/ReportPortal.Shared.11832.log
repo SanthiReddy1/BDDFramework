@@ -1,0 +1,26 @@
+ExtensionManager Error: 0 : 17:45:15.9835772 : 2-Test Runner : System.IO.FileLoadException: Could not load file or assembly 'TechTalk.SpecFlow, Version=3.7.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41' or one of its dependencies. Invalid pointer (Exception from HRESULT: 0x80004003 (E_POINTER))
+File name: 'TechTalk.SpecFlow, Version=3.7.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41' ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+
+
+ExtensionManager Error: 0 : 17:45:15.9935735 : 2-Test Runner : System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+ExtensionManager Error: 0 : 17:45:16.0045715 : 2-Test Runner : System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+ExtensionManager Error: 0 : 17:45:16.0125693 : 2-Test Runner : System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+ExtensionManager Error: 0 : 17:45:16.0225707 : 2-Test Runner : System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+ExtensionManager Error: 0 : 17:45:17.4345715 : 4-AppDomainForTestAssembly : System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+

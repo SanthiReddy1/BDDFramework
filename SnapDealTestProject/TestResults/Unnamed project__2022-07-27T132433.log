@@ -1,0 +1,152 @@
+﻿2022-07-27T13:24:33.7251787+05:30;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2022-07-27T13:24:33.7251787+05:30;VSTestExecutionThread;Info;SpecFlow+Runner 3.9.31 in Framework clr40 in x86 mode execution started
+2022-07-27T13:24:33.7251787+05:30;VSTestExecutionThread;Info;TestAdapter Location: C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2022-07-27T13:24:33.7261787+05:30;VSTestExecutionThread;Info;Current UserName: 'C278249', MachineName: 'USE2DEVP00496'
+2022-07-27T13:24:33.7821827+05:30;VSTestExecutionThread;Info;SpecRun: running tests in C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll
+2022-07-27T13:24:33.7821827+05:30;VSTestExecutionThread;Info;Output folder configured to "C:\BDDPracticeFramework\SnapDealTestProject\TestResults" (default)
+2022-07-27T13:24:33.7821827+05:30;VSTestExecutionThread;Info;Profile: 
+2022-07-27T13:24:33.8161797+05:30;VSTestExecutionThread;Info;Log file path: C:\BDDPracticeFramework\SnapDealTestProject\TestResults\Unnamed project__2022-07-27T132433.log
+2022-07-27T13:24:33.8241783+05:30;Thread#11;Info;Checking activation
+2022-07-27T13:24:33.8401785+05:30;Thread#11;Info;Activation check completed
+2022-07-27T13:24:33.8401785+05:30;Thread#11;Info;Starting test run
+2022-07-27T13:24:34.1221789+05:30;Thread#11;Info;Discovering target: Default
+2022-07-27T13:24:34.1221789+05:30;Thread#11;Info;Discovering tests from assembly: C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll
+2022-07-27T13:24:34.2081788+05:30;Thread#11;Info;Discovered tests from assembly: C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll
+2022-07-27T13:24:34.2091798+05:30:Test Suite Dump
+2022-07-27T13:24:34.2101796+05:30:#0: Unnamed project/ - 
+2022-07-27T13:24:34.2101796+05:30:#1: Default - 
+2022-07-27T13:24:34.2101796+05:30:#2: SnapDealTestProject - 
+2022-07-27T13:24:34.2101796+05:30:#3: SnapDeal - 
+2022-07-27T13:24:34.2281810+05:30:#4: Verify sort by filter options - TestAssembly:SnapDealTestProject/Feature:SnapDeal/Scenario:Verify+sort+by+filter+options
+2022-07-27T13:24:34.2281810+05:30:#5: Verify SnapDeal home page has all neceesary icons - TestAssembly:SnapDealTestProject/Feature:SnapDeal/Scenario:Verify+SnapDeal+home+page+has+all+neceesary+icons
+2022-07-27T13:24:34.2281810+05:30:End: Test Suite Dump
+2022-07-27T13:24:34.2581795+05:30:Thread#0:Scheduler: get next test for thread 0
+2022-07-27T13:24:34.2591805+05:30:Thread#:Scheduler: testitem #4 from normal test queue 
+2022-07-27T13:24:34.2591805+05:30:Thread#0:Scheduler: considering testitem #4 for thread 0
+2022-07-27T13:24:34.2651782+05:30:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2022-07-27T13:24:34.2651782+05:30:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2022-07-27T13:24:34.2651782+05:30:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2022-07-27T13:24:34.2651782+05:30:Thread#0:Scheduler: using testitem #4 for thread 0
+2022-07-27T13:24:34.2671807+05:30:Thread#0:Scheduler: Test #4 is scheduled for thread
+2022-07-27T13:24:34.2691798+05:30:Thread#0:Scheduler: with testItemExecutionIndex 0
+2022-07-27T13:24:34.2721796+05:30:Thread #0: creating new test thread executor for SnapDealTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+2022-07-27T13:24:34.2761781+05:30:Thread #0: Creating test assembly executor for execution model AppDomain
+2022-07-27T13:24:34.2821813+05:30:Thread #0: Creating test assembly executor for execution model AppDomain
+2022-07-27T13:24:34.2841813+05:30:Thread #0: using TechTalk.SpecRun.Framework.Execution.InProcess.InProcAppDomainTestAssemblyExecutorHost to execute tests
+2022-07-27T13:24:34.7041778+05:30:Thread#0:T:-> Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+2022-07-27T13:24:34.7171784+05:30:Thread#0:T:-> Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\ReportPortal.SpecFlowPlugin.dll
+2022-07-27T13:24:34.7471796+05:30:Thread#0:T:-> Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SpecRun.Runtime.SpecFlowPlugin.dll
+2022-07-27T13:24:34.7561997+05:30:Thread#0:T:-> Loading plugin C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll
+2022-07-27T13:24:34.7791792+05:30:Thread#0:T:-> Using default config
+2022-07-27T13:24:35.0791784+05:30:Thread#0: Test #4/0 is started on thread #0
+2022-07-27T13:24:35.1451757+05:30:Thread#0:T:path is: C:\BDDPracticeFramework\SnapDealTestProject
+2022-07-27T13:24:39.3831762+05:30:Thread#0:B:Given I Open SnapDeal site
+2022-07-27T13:24:44.3501741+05:30:Thread#0:T:done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (4.9s)
+2022-07-27T13:24:44.3641721+05:30:Thread#0:B:Then I verify search bar is displayed
+2022-07-27T13:24:46.4191714+05:30:Thread#0:T:done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (2.0s)
+2022-07-27T13:24:46.4401711+05:30:Thread#0:B:When I search for 'Perfumes'
+2022-07-27T13:24:51.0611706+05:30:Thread#0:T:error: unknown error: cannot determine loading status
+2022-07-27T13:24:51.0621683+05:30:Thread#0:T:from unknown error: unexpected command response
+2022-07-27T13:24:51.0631699+05:30:Thread#0:T:  (Session info: chrome=103.0.5060.134) (4.6s)
+2022-07-27T13:24:51.0651655+05:30:Thread#0:B:Then I verify menu icon displayed
+2022-07-27T13:24:51.0671709+05:30:Thread#0:T:skipped because of previous errors
+2022-07-27T13:24:51.0751652+05:30:Thread#0:B:When I apply 'Price Low To High' SortBy filter
+2022-07-27T13:24:51.0781675+05:30:Thread#0:T:skipped because of previous errors
+2022-07-27T13:24:51.0801686+05:30:Thread#0:B:Then I verify 'Price Low To High' SortBy filter is applied
+2022-07-27T13:24:51.0811692+05:30:Thread#0:T:skipped because of previous errors
+2022-07-27T13:24:51.1071686+05:30:Thread#0:TestItem#4:Scheduler: reschedule tests for testitem #4
+2022-07-27T13:24:51.1101665+05:30:Thread#0:Scheduler: get next test for thread 0
+2022-07-27T13:24:51.1101665+05:30:Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+2022-07-27T13:24:51.1101665+05:30:Thread#0:Scheduler: considering testitem #4 for thread 0
+2022-07-27T13:24:51.1101665+05:30:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2022-07-27T13:24:51.1101665+05:30:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2022-07-27T13:24:51.1101665+05:30:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2022-07-27T13:24:51.1101665+05:30:Thread#0:Scheduler: using testitem #4 for thread 0
+2022-07-27T13:24:51.1101665+05:30:Thread#0:Scheduler: Test #4 is scheduled for thread
+2022-07-27T13:24:51.1101665+05:30:Thread#0:Scheduler: with testItemExecutionIndex 1
+2022-07-27T13:24:51.1141654+05:30:Thread#0:T:path is: C:\BDDPracticeFramework\SnapDealTestProject
+2022-07-27T13:24:54.2011646+05:30:Thread#0: Test #4/0 is finished on thread #0 as Failed within 19.1219862 seconds
+2022-07-27T13:24:54.2051681+05:30:Thread#0: Test #4/1 is started on thread #0
+2022-07-27T13:24:54.2071688+05:30:Thread#0:T:path is: C:\BDDPracticeFramework\SnapDealTestProject
+2022-07-27T13:24:58.7306989+05:30:Thread#0:B:Given I Open SnapDeal site
+2022-07-27T13:25:04.8029761+05:30:Thread#0:T:done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (6.1s)
+2022-07-27T13:25:04.8039741+05:30:Thread#0:B:Then I verify search bar is displayed
+2022-07-27T13:25:06.2799704+05:30:Thread#0:T:done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (1.5s)
+2022-07-27T13:25:06.2819744+05:30:Thread#0:B:When I search for 'Perfumes'
+2022-07-27T13:25:09.6629697+05:30:Thread#0:T:error: unknown error: cannot determine loading status
+2022-07-27T13:25:09.6639690+05:30:Thread#0:T:from unknown error: unexpected command response
+2022-07-27T13:25:09.6649694+05:30:Thread#0:T:  (Session info: chrome=103.0.5060.134) (3.4s)
+2022-07-27T13:25:09.6679689+05:30:Thread#0:B:Then I verify menu icon displayed
+2022-07-27T13:25:09.6689699+05:30:Thread#0:T:skipped because of previous errors
+2022-07-27T13:25:09.6699698+05:30:Thread#0:B:When I apply 'Price Low To High' SortBy filter
+2022-07-27T13:25:09.6719691+05:30:Thread#0:T:skipped because of previous errors
+2022-07-27T13:25:09.6719691+05:30:Thread#0:B:Then I verify 'Price Low To High' SortBy filter is applied
+2022-07-27T13:25:09.6729683+05:30:Thread#0:T:skipped because of previous errors
+2022-07-27T13:25:09.6759688+05:30:Thread#0:Scheduler: get next test for thread 0
+2022-07-27T13:25:09.6759688+05:30:Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+2022-07-27T13:25:09.6759688+05:30:Thread#0:Scheduler: considering testitem #4 for thread 0
+2022-07-27T13:25:09.6759688+05:30:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2022-07-27T13:25:09.6759688+05:30:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2022-07-27T13:25:09.6759688+05:30:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2022-07-27T13:25:09.6759688+05:30:Thread#0:Scheduler: using testitem #4 for thread 0
+2022-07-27T13:25:09.6759688+05:30:Thread#0:Scheduler: Test #4 is scheduled for thread
+2022-07-27T13:25:09.6759688+05:30:Thread#0:Scheduler: with testItemExecutionIndex 2
+2022-07-27T13:25:09.6769693+05:30:Thread#0:T:path is: C:\BDDPracticeFramework\SnapDealTestProject
+2022-07-27T13:25:16.6758477+05:30:Thread#0: Test #4/1 is finished on thread #0 as Failed within 22.4706796 seconds
+2022-07-27T13:25:16.6768464+05:30:Thread#0: Test #4/2 is started on thread #0
+2022-07-27T13:25:16.6788484+05:30:Thread#0:T:path is: C:\BDDPracticeFramework\SnapDealTestProject
+2022-07-27T13:25:21.8638423+05:30:Thread#0:B:Given I Open SnapDeal site
+2022-07-27T13:25:26.7147413+05:30:Thread#0:T:done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (4.8s)
+2022-07-27T13:25:26.7157420+05:30:Thread#0:B:Then I verify search bar is displayed
+2022-07-27T13:25:26.8037433+05:30:Thread#0:T:done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (0.1s)
+2022-07-27T13:25:26.8047416+05:30:Thread#0:B:When I search for 'Perfumes'
+2022-07-27T13:25:33.9017386+05:30:Thread#0:T:done: SnapDealStepDefinitions.WhenISearchFor("Perfumes") (7.1s)
+2022-07-27T13:25:33.9027377+05:30:Thread#0:B:Then I verify menu icon displayed
+2022-07-27T13:25:34.1707372+05:30:Thread#0:T:done: SnapDealStepDefinitions.ThenIVerifyMenuIconDisplayed() (0.3s)
+2022-07-27T13:25:34.1717371+05:30:Thread#0:B:When I apply 'Price Low To High' SortBy filter
+2022-07-27T13:25:35.0287358+05:30:Thread#0:T:done: SnapDealStepDefinitions.WhenIApplySortByFilter(PriceLowToHigh) (0.9s)
+2022-07-27T13:25:35.0307358+05:30:Thread#0:B:Then I verify 'Price Low To High' SortBy filter is applied
+2022-07-27T13:25:35.0747365+05:30:Thread#0:T:done: SnapDealStepDefinitions.ThenIVerifySortByFilterIsApplied(PriceLowToHigh) (0.0s)
+2022-07-27T13:25:35.0787363+05:30:Thread#0:Scheduler: get next test for thread 0
+2022-07-27T13:25:35.0787363+05:30:Thread#:Scheduler: testitem #5 from normal test queue 
+2022-07-27T13:25:35.0787363+05:30:Thread#0:Scheduler: considering testitem #5 for thread 0
+2022-07-27T13:25:35.0787363+05:30:Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+2022-07-27T13:25:35.0787363+05:30:Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+2022-07-27T13:25:35.0787363+05:30:Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+2022-07-27T13:25:35.0787363+05:30:Thread#0:Scheduler: using testitem #5 for thread 0
+2022-07-27T13:25:35.0787363+05:30:Thread#0:Scheduler: Test #5 is scheduled for thread
+2022-07-27T13:25:35.0797365+05:30:Thread#0:Scheduler: with testItemExecutionIndex 0
+2022-07-27T13:25:35.8717374+05:30:Thread#0: Test #4/2 is finished on thread #0 as Succeeded within 19.1938897 seconds
+2022-07-27T13:25:35.8747366+05:30:Thread#0: Test #5/0 is started on thread #0
+2022-07-27T13:25:35.8777353+05:30:Thread#0:T:path is: C:\BDDPracticeFramework\SnapDealTestProject
+2022-07-27T13:25:40.1067325+05:30:Thread#0:B:Given I Open SnapDeal site
+2022-07-27T13:25:44.9187298+05:30:Thread#0:T:done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (4.8s)
+2022-07-27T13:25:44.9197309+05:30:Thread#0:B:Then I verify the icons displayed on the home page
+2022-07-27T13:25:47.4407298+05:30:Thread#0:T:done: SnapDealStepDefinitions.ThenIVerifyTheIconsDisplayedOnTheHomePage() (2.5s)
+2022-07-27T13:25:47.4427289+05:30:Thread#0:Scheduler: get next test for thread 0
+2022-07-27T13:25:47.4427289+05:30:Thread#:Scheduler: at the end of normal test queue
+2022-07-27T13:25:47.4427289+05:30:Thread#0:Scheduler: enumerator for thread is at end
+2022-07-27T13:25:47.4427289+05:30:Thread#0:Scheduler: No more tests for thread
+2022-07-27T13:25:48.2667299+05:30:Thread#0: Test #5/0 is finished on thread #0 as Succeeded within 12.3919933 seconds
+2022-07-27T13:25:48.9827278+05:30:Thread#0:T:-> LivingDocPlugin: Output generated in: C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\TestExecution.json
+2022-07-27T13:25:49.0747283+05:30:Trying to cancel thread
+2022-07-27T13:25:49.0747283+05:30:Thread cancelled
+2022-07-27T13:25:49.0837280+05:30:Thread#-1:Scheduler: get next test for thread -1
+2022-07-27T13:25:49.0837280+05:30:Thread#:Scheduler: at the end of normal test queue
+2022-07-27T13:25:49.0837280+05:30:Thread#-1:Scheduler: enumerator for thread is at end
+2022-07-27T13:25:49.0927280+05:30;Thread#11;Info;test run finished
+2022-07-27T13:25:49.0937275+05:30;Thread#11;Info;publishing test results
+2022-07-27T13:25:49.1917287+05:30;Thread#11;Info;test results published
+2022-07-27T13:25:49.1917287+05:30;Thread#11;Info;generating reports
+2022-07-27T13:25:49.4717284+05:30;Thread#11;Info;Starting external report generation process
+2022-07-27T13:25:51.7547264+05:30;Thread#11;Info;Successfully generated reports.
+2022-07-27T13:25:51.7577269+05:30;Thread#11;Info;Successfully generated reports
+2022-07-27T13:25:51.7737241+05:30:Total: 2 (test executions: 4)
+2022-07-27T13:25:51.7757255+05:30:Succeeded: 1
+2022-07-27T13:25:51.7777251+05:30:Ignored: 0
+2022-07-27T13:25:51.7777251+05:30:Pending: 0
+2022-07-27T13:25:51.7777251+05:30:Skipped: 0
+2022-07-27T13:25:51.7787254+05:30:Failed: 1
+2022-07-27T13:25:51.7967263+05:30;VSTestExecutionThread;Info;Adding attachments to VSTest
+2022-07-27T13:25:51.7967263+05:30;VSTestExecutionThread;Info;adding Test Execution Report 'C:\BDDPracticeFramework\SnapDealTestProject\TestResults\Unnamed project__2022-07-27T132433.html'
+========== End of log file ==========
