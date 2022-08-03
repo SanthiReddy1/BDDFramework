@@ -3,9 +3,9 @@
     using System;
     using System.IO;
 
-    using BoDi;
-
     using OpenQA.Selenium;
+
+    using ReportPortal.Shared.Execution.Logging;
 
     using SnapDealTestProject.Library.Extensions;
     using SnapDealTestProject.Utils.Assertions;
@@ -22,6 +22,7 @@
         private QualityTestCase QualityTestCase;
 
         [BeforeScenario]
+        [Scope(Feature = "SnapDeal"), Scope(Scenario = "Testing parallelism")]
         public void BeforeScenario(ScenarioContext scenarioContext, QualityTestCase QualityTestCase)
         {
             this.scenarioContext = scenarioContext;
@@ -30,8 +31,10 @@
         }
 
         [AfterScenario]
+        [Scope(Feature = "SnapDeal"), Scope(Scenario = "Testing parallelism")]
         public void TearDown()
         {
+
             try
             {
                 if (scenarioContext.TestError != null)
@@ -42,6 +45,7 @@
                         scenarioContext.ScenarioInfo.Title.Replace(" ", String.Empty) + "_"
                         + DateTime.Now.ToString("MM-dd-yyyy-hh-mm-ss") + "_ERROR" + ".png");
                     Screenshot screenshot = DriverExtensions.GetScreenshot(this.screenshotPath);
+                    Console.WriteLine("Screenshot: {0}", new Uri(screenshotPath));
                 }
 
                 this.QualityTestCase.Cleanup(this.scenarioContext);

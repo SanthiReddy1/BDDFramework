@@ -98,6 +98,15 @@
           "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
         }
       },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
       "NUnit/3.13.3": {
         "type": "package",
         "compile": {
@@ -108,6 +117,12 @@
         },
         "build": {
           "build/NUnit.props": {}
+        }
+      },
+      "NUnit3TestAdapter/4.2.1": {
+        "type": "package",
+        "build": {
+          "build/net35/NUnit3TestAdapter.props": {}
         }
       },
       "ReportPortal.Client/3.0.6": {
@@ -199,6 +214,16 @@
         },
         "build": {
           "build/SpecFlow.targets": {}
+        }
+      },
+      "SpecFlow.ExternalData/3.9.74": {
+        "type": "package",
+        "dependencies": {
+          "SpecFlow": "[3.9.74]"
+        },
+        "build": {
+          "build/SpecFlow.ExternalData.props": {},
+          "build/SpecFlow.ExternalData.targets": {}
         }
       },
       "SpecFlow.Internal.Json/1.0.8": {
@@ -502,6 +527,19 @@
         "microsoft.net.test.sdk.nuspec"
       ]
     },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+      "sha512": "cuvqi/U5MYSM0gvR2l90q0m/urRgmg69EiwP5VWp1RcaJ0YT5G26Va5LaOZ3KJFc22FNihS5CUjeePUp2YpGQA==",
+      "type": "package",
+      "path": "microsoft.office.interop.excel/15.0.4795.1001",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Microsoft.Office.Interop.Excel.dll",
+        "lib/netstandard2.0/Microsoft.Office.Interop.Excel.dll",
+        "microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512",
+        "microsoft.office.interop.excel.nuspec"
+      ]
+    },
     "NUnit/3.13.3": {
       "sha512": "KNPDpls6EfHwC3+nnA67fh5wpxeLb3VLFAfLxrug6JMYDLHH6InaQIWR7Sc3y75d/9IKzMksH/gi08W7XWbmnQ==",
       "type": "package",
@@ -524,6 +562,31 @@
         "lib/netstandard2.0/nunit.framework.xml",
         "nunit.3.13.3.nupkg.sha512",
         "nunit.nuspec"
+      ]
+    },
+    "NUnit3TestAdapter/4.2.1": {
+      "sha512": "kgH8VKsrcZZgNGQXRpVCrM7TnNz9li3b/snH+YmnXUNqsaWa1Xw9EQWHpbzq4Li2FbTjTE/E5N5HdLNXzZ8BpQ==",
+      "type": "package",
+      "path": "nunit3testadapter/4.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net35/NUnit3.TestAdapter.dll",
+        "build/net35/NUnit3.TestAdapter.pdb",
+        "build/net35/NUnit3TestAdapter.props",
+        "build/net35/nunit.engine.api.dll",
+        "build/net35/nunit.engine.core.dll",
+        "build/net35/nunit.engine.dll",
+        "build/net35/testcentric.engine.metadata.dll",
+        "build/netcoreapp2.1/NUnit3.TestAdapter.dll",
+        "build/netcoreapp2.1/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp2.1/NUnit3TestAdapter.props",
+        "build/netcoreapp2.1/nunit.engine.api.dll",
+        "build/netcoreapp2.1/nunit.engine.core.dll",
+        "build/netcoreapp2.1/nunit.engine.dll",
+        "build/netcoreapp2.1/testcentric.engine.metadata.dll",
+        "nunit3testadapter.4.2.1.nupkg.sha512",
+        "nunit3testadapter.nuspec"
       ]
     },
     "ReportPortal.Client/3.0.6": {
@@ -653,6 +716,172 @@
         "lib/netstandard2.0/TechTalk.SpecFlow.xml",
         "specflow.3.9.74.nupkg.sha512",
         "specflow.nuspec"
+      ]
+    },
+    "SpecFlow.ExternalData/3.9.74": {
+      "sha512": "PAj5/scWWqET+fxjDwi/mJyLDJN1cuKvw6YuRNg2bNH+tcKXAqy8nlFNPXMc5AgfimdIRb3WredGD5e/MK/vxw==",
+      "type": "package",
+      "path": "specflow.externaldata/3.9.74",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/SpecFlow.ExternalData.props",
+        "build/SpecFlow.ExternalData.targets",
+        "build/net461/BoDi.dll",
+        "build/net461/CsvHelper.dll",
+        "build/net461/ExcelDataReader.DataSet.dll",
+        "build/net461/ExcelDataReader.dll",
+        "build/net461/Gherkin.dll",
+        "build/net461/Microsoft.Win32.Primitives.dll",
+        "build/net461/SpecFlow.ExternalData.SpecFlowPlugin.dll",
+        "build/net461/SpecFlow.ExternalData.SpecFlowPlugin.pdb",
+        "build/net461/SpecFlow.Internal.Json.dll",
+        "build/net461/System.AppContext.dll",
+        "build/net461/System.Buffers.dll",
+        "build/net461/System.CodeDom.dll",
+        "build/net461/System.Collections.Concurrent.dll",
+        "build/net461/System.Collections.NonGeneric.dll",
+        "build/net461/System.Collections.Specialized.dll",
+        "build/net461/System.Collections.dll",
+        "build/net461/System.ComponentModel.EventBasedAsync.dll",
+        "build/net461/System.ComponentModel.Primitives.dll",
+        "build/net461/System.ComponentModel.TypeConverter.dll",
+        "build/net461/System.ComponentModel.dll",
+        "build/net461/System.Console.dll",
+        "build/net461/System.Data.Common.dll",
+        "build/net461/System.Diagnostics.Contracts.dll",
+        "build/net461/System.Diagnostics.Debug.dll",
+        "build/net461/System.Diagnostics.FileVersionInfo.dll",
+        "build/net461/System.Diagnostics.Process.dll",
+        "build/net461/System.Diagnostics.StackTrace.dll",
+        "build/net461/System.Diagnostics.TextWriterTraceListener.dll",
+        "build/net461/System.Diagnostics.Tools.dll",
+        "build/net461/System.Diagnostics.TraceSource.dll",
+        "build/net461/System.Diagnostics.Tracing.dll",
+        "build/net461/System.Drawing.Primitives.dll",
+        "build/net461/System.Dynamic.Runtime.dll",
+        "build/net461/System.Globalization.Calendars.dll",
+        "build/net461/System.Globalization.Extensions.dll",
+        "build/net461/System.Globalization.dll",
+        "build/net461/System.IO.Compression.ZipFile.dll",
+        "build/net461/System.IO.Compression.dll",
+        "build/net461/System.IO.FileSystem.DriveInfo.dll",
+        "build/net461/System.IO.FileSystem.Primitives.dll",
+        "build/net461/System.IO.FileSystem.Watcher.dll",
+        "build/net461/System.IO.FileSystem.dll",
+        "build/net461/System.IO.IsolatedStorage.dll",
+        "build/net461/System.IO.MemoryMappedFiles.dll",
+        "build/net461/System.IO.Pipes.dll",
+        "build/net461/System.IO.UnmanagedMemoryStream.dll",
+        "build/net461/System.IO.dll",
+        "build/net461/System.Linq.Expressions.dll",
+        "build/net461/System.Linq.Parallel.dll",
+        "build/net461/System.Linq.Queryable.dll",
+        "build/net461/System.Linq.dll",
+        "build/net461/System.Memory.dll",
+        "build/net461/System.Net.Http.dll",
+        "build/net461/System.Net.NameResolution.dll",
+        "build/net461/System.Net.NetworkInformation.dll",
+        "build/net461/System.Net.Ping.dll",
+        "build/net461/System.Net.Primitives.dll",
+        "build/net461/System.Net.Requests.dll",
+        "build/net461/System.Net.Security.dll",
+        "build/net461/System.Net.Sockets.dll",
+        "build/net461/System.Net.WebHeaderCollection.dll",
+        "build/net461/System.Net.WebSockets.Client.dll",
+        "build/net461/System.Net.WebSockets.dll",
+        "build/net461/System.Numerics.Vectors.dll",
+        "build/net461/System.ObjectModel.dll",
+        "build/net461/System.Reflection.Extensions.dll",
+        "build/net461/System.Reflection.Primitives.dll",
+        "build/net461/System.Reflection.dll",
+        "build/net461/System.Resources.Reader.dll",
+        "build/net461/System.Resources.ResourceManager.dll",
+        "build/net461/System.Resources.Writer.dll",
+        "build/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "build/net461/System.Runtime.CompilerServices.VisualC.dll",
+        "build/net461/System.Runtime.Extensions.dll",
+        "build/net461/System.Runtime.Handles.dll",
+        "build/net461/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/net461/System.Runtime.InteropServices.dll",
+        "build/net461/System.Runtime.Numerics.dll",
+        "build/net461/System.Runtime.Serialization.Formatters.dll",
+        "build/net461/System.Runtime.Serialization.Json.dll",
+        "build/net461/System.Runtime.Serialization.Primitives.dll",
+        "build/net461/System.Runtime.Serialization.Xml.dll",
+        "build/net461/System.Runtime.dll",
+        "build/net461/System.Security.Claims.dll",
+        "build/net461/System.Security.Cryptography.Algorithms.dll",
+        "build/net461/System.Security.Cryptography.Csp.dll",
+        "build/net461/System.Security.Cryptography.Encoding.dll",
+        "build/net461/System.Security.Cryptography.Primitives.dll",
+        "build/net461/System.Security.Cryptography.X509Certificates.dll",
+        "build/net461/System.Security.Principal.dll",
+        "build/net461/System.Security.SecureString.dll",
+        "build/net461/System.Text.Encoding.CodePages.dll",
+        "build/net461/System.Text.Encoding.Extensions.dll",
+        "build/net461/System.Text.Encoding.dll",
+        "build/net461/System.Text.RegularExpressions.dll",
+        "build/net461/System.Threading.Overlapped.dll",
+        "build/net461/System.Threading.Tasks.Dataflow.dll",
+        "build/net461/System.Threading.Tasks.Extensions.dll",
+        "build/net461/System.Threading.Tasks.Parallel.dll",
+        "build/net461/System.Threading.Tasks.dll",
+        "build/net461/System.Threading.Thread.dll",
+        "build/net461/System.Threading.ThreadPool.dll",
+        "build/net461/System.Threading.Timer.dll",
+        "build/net461/System.Threading.dll",
+        "build/net461/System.ValueTuple.dll",
+        "build/net461/System.Xml.ReaderWriter.dll",
+        "build/net461/System.Xml.XDocument.dll",
+        "build/net461/System.Xml.XPath.XDocument.dll",
+        "build/net461/System.Xml.XPath.dll",
+        "build/net461/System.Xml.XmlDocument.dll",
+        "build/net461/System.Xml.XmlSerializer.dll",
+        "build/net461/TechTalk.SpecFlow.Generator.dll",
+        "build/net461/TechTalk.SpecFlow.Generator.pdb",
+        "build/net461/TechTalk.SpecFlow.Parser.dll",
+        "build/net461/TechTalk.SpecFlow.Parser.pdb",
+        "build/net461/TechTalk.SpecFlow.Utils.dll",
+        "build/net461/TechTalk.SpecFlow.Utils.pdb",
+        "build/net461/TechTalk.SpecFlow.dll",
+        "build/net461/TechTalk.SpecFlow.pdb",
+        "build/net461/TechTalk.SpecFlow.xml",
+        "build/net461/Utf8Json.dll",
+        "build/net461/netstandard.dll",
+        "build/netcoreapp2.1/BoDi.dll",
+        "build/netcoreapp2.1/CsvHelper.dll",
+        "build/netcoreapp2.1/ExcelDataReader.DataSet.dll",
+        "build/netcoreapp2.1/ExcelDataReader.dll",
+        "build/netcoreapp2.1/Gherkin.dll",
+        "build/netcoreapp2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "build/netcoreapp2.1/Microsoft.Bcl.HashCode.dll",
+        "build/netcoreapp2.1/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/netcoreapp2.1/Microsoft.Extensions.DependencyModel.dll",
+        "build/netcoreapp2.1/Newtonsoft.Json.dll",
+        "build/netcoreapp2.1/SpecFlow.ExternalData.SpecFlowPlugin.deps.json",
+        "build/netcoreapp2.1/SpecFlow.ExternalData.SpecFlowPlugin.dll",
+        "build/netcoreapp2.1/SpecFlow.ExternalData.SpecFlowPlugin.pdb",
+        "build/netcoreapp2.1/SpecFlow.Internal.Json.dll",
+        "build/netcoreapp2.1/System.CodeDom.dll",
+        "build/netcoreapp2.1/System.Configuration.ConfigurationManager.dll",
+        "build/netcoreapp2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "build/netcoreapp2.1/System.Security.Cryptography.ProtectedData.dll",
+        "build/netcoreapp2.1/System.Text.Encoding.CodePages.dll",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.Generator.dll",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.Generator.pdb",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.Parser.dll",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.Parser.pdb",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.Utils.dll",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.Utils.pdb",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.dll",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.pdb",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.xml",
+        "build/netcoreapp2.1/Utf8Json.dll",
+        "images/specflow-icon.png",
+        "specflow.externaldata.3.9.74.nupkg.sha512",
+        "specflow.externaldata.nuspec"
       ]
     },
     "SpecFlow.Internal.Json/1.0.8": {
@@ -1069,12 +1298,15 @@
       "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "FluentAssertions >= 6.2.0",
       "Microsoft.NET.Test.Sdk >= 17.0.0",
+      "Microsoft.Office.Interop.Excel >= 15.0.4795.1001",
       "NUnit >= 3.13.3",
+      "NUnit3TestAdapter >= 4.2.1",
       "ReportPortal.Client >= 3.0.6",
       "ReportPortal.Shared >= 3.2.0",
       "ReportPortal.VSTest.TestLogger >= 3.3.0",
       "Selenium.Support >= 4.1.1",
       "Selenium.WebDriver >= 4.1.1",
+      "SpecFlow.ExternalData >= 3.9.74",
       "SpecFlow.NUnit >= 3.9.74",
       "SpecFlow.Plus.LivingDocPlugin >= 3.9.57",
       "log4net >= 2.0.14"
@@ -1132,9 +1364,17 @@
             "target": "Package",
             "version": "[17.0.0, )"
           },
+          "Microsoft.Office.Interop.Excel": {
+            "target": "Package",
+            "version": "[15.0.4795.1001, )"
+          },
           "NUnit": {
             "target": "Package",
             "version": "[3.13.3, )"
+          },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "[4.2.1, )"
           },
           "ReportPortal.Client": {
             "target": "Package",
@@ -1155,6 +1395,10 @@
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[4.1.1, )"
+          },
+          "SpecFlow.ExternalData": {
+            "target": "Package",
+            "version": "[3.9.74, )"
           },
           "SpecFlow.NUnit": {
             "target": "Package",

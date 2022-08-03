@@ -43,7 +43,12 @@
         [Then(@"I verify '(.*)' SortBy filter is applied")]
         public void ThenIVerifySortByFilterIsApplied(SearchSortOptions option)
         {
-            Assert.True(this.searchResultsPage.SortByDropdown.IsSelected(option));
+            QualityCheck isSortByFilterAppliedCheck = new QualityCheck("Verify whether cart icon is displayed");
+            this.QualityTestCase.AddQualityChecks(isSortByFilterAppliedCheck);
+            QualityVerify.IsTrue(
+                isSortByFilterAppliedCheck,
+                this.searchResultsPage.SortByDropdown.IsSelected(option),
+                "Sort By Filter is not applied");
         }
 
         [Then(@"I verify the icons displayed on the home page")]

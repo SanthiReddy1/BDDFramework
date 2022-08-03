@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b88e4c15-42d0-43cc-b360-1db9348ff76b" name="C278249@USE2DEVP00496 2022-08-01 16:20:29" runUser="EAD\C278249" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-08-01T16:20:29.1721592+05:30" queuing="2022-08-01T16:20:29.1721592+05:30" start="2022-08-01T16:20:25.9948967+05:30" finish="2022-08-01T16:20:31.4049575+05:30" />
+  <TestSettings name="default" id="1603ba5e-cf77-4cb1-b7fd-11f4f1ef656e">
+    <Deployment runDeploymentRoot="C278249_USE2DEVP00496_2022-08-01_16_20_29" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f003ea8c-7df5-4269-a700-f51dfd7a79e1" testId="0c14bfb0-219d-c933-8de7-3315f1dd063d" testName="VerifySortByFilterOptions" computerName="USE2DEVP00496" duration="00:00:02.0500000" startTime="2022-08-01T16:20:29.0661613+05:30" endTime="2022-08-01T16:20:31.1159567+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f003ea8c-7df5-4269-a700-f51dfd7a79e1">
+      <Output>
+        <StdOut>Given I Open SnapDeal site&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+System.NullReferenceException: Object reference not set to an instance of an object.&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 127&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 44</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Could not connect to the remote WebDriver server for URL http://10.178.169.23:4444/session.&#xD;
+  ----&gt; System.Net.Http.HttpRequestException : An error occurred while sending the request.&#xD;
+  ----&gt; System.Net.WebException : Unable to connect to the remote server&#xD;
+  ----&gt; System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it 10.178.169.23:4444&#xD;
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, DriverOptions options)&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.InitializeWebDriver() in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 36&#xD;
+   at SnapDealTestProject.Hooks.Base.BeforeScenario(ScenarioContext scenarioContext, QualityTestCase QualityTestCase) in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 29&#xD;
+   at lambda_method(Closure , IContextManager , ScenarioContext , QualityTestCase )&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11&#xD;
+--HttpRequestException&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+--WebException&#xD;
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext&amp; context)&#xD;
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)&#xD;
+--SocketException&#xD;
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)&#xD;
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)&#xD;
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+--TearDown&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 55&#xD;
+   at lambda_method(Closure , IContextManager )&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()&#xD;
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.TestTearDown()</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="50190d15-6f70-4f43-87e8-64d5b1edebc4" testId="cf572abd-d502-d2e0-ce09-3b856bfce869" testName="VerifySnapDealHomePageHasAllNeceesaryIcons" computerName="USE2DEVP00496" duration="00:00:02.2530000" startTime="2022-08-01T16:20:26.8115674+05:30" endTime="2022-08-01T16:20:29.0641586+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50190d15-6f70-4f43-87e8-64d5b1edebc4">
+      <Output>
+        <StdOut>Given I Open SnapDeal site&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify the icons displayed on the home page&#xD;
+-&gt; skipped because of previous errors&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+System.NullReferenceException: Object reference not set to an instance of an object.&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 127&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 44</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Could not connect to the remote WebDriver server for URL http://10.178.169.23:4444/session.&#xD;
+  ----&gt; System.Net.Http.HttpRequestException : An error occurred while sending the request.&#xD;
+  ----&gt; System.Net.WebException : Unable to connect to the remote server&#xD;
+  ----&gt; System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it 10.178.169.23:4444&#xD;
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, DriverOptions options)&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.InitializeWebDriver() in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 36&#xD;
+   at SnapDealTestProject.Hooks.Base.BeforeScenario(ScenarioContext scenarioContext, QualityTestCase QualityTestCase) in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 29&#xD;
+   at lambda_method(Closure , IContextManager , ScenarioContext , QualityTestCase )&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySnapDealHomePageHasAllNeceesaryIcons() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SnapDeal.feature:line 16&#xD;
+--HttpRequestException&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+--WebException&#xD;
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext&amp; context)&#xD;
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)&#xD;
+--SocketException&#xD;
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)&#xD;
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)&#xD;
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+--TearDown&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 55&#xD;
+   at lambda_method(Closure , IContextManager )&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()&#xD;
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.TestTearDown()</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0c06274c-9e9f-4fe5-809e-b2fb217838fb" testId="e83985a7-806b-673d-f050-42bf5bc8beb3" testName="TestingParallelism" computerName="USE2DEVP00496" duration="00:00:02.2530000" startTime="2022-08-01T16:20:26.8115674+05:30" endTime="2022-08-01T16:20:29.0641586+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c06274c-9e9f-4fe5-809e-b2fb217838fb">
+      <Output>
+        <StdOut>Given I Open SnapDeal site&#xD;
+-&gt; skipped because of previous errors&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+System.NullReferenceException: Object reference not set to an instance of an object.&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 127&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 44</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Could not connect to the remote WebDriver server for URL http://10.178.169.23:4444/session.&#xD;
+  ----&gt; System.Net.Http.HttpRequestException : An error occurred while sending the request.&#xD;
+  ----&gt; System.Net.WebException : Unable to connect to the remote server&#xD;
+  ----&gt; System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it 10.178.169.23:4444&#xD;
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, DriverOptions options)&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.InitializeWebDriver() in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 30&#xD;
+   at SnapDealTestProject.Hooks.Base.BeforeScenario(ScenarioContext scenarioContext, QualityTestCase QualityTestCase) in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 29&#xD;
+   at lambda_method(Closure , IContextManager , ScenarioContext , QualityTestCase )&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SpecFlowFeature2Feature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SpecFlowFeature2Feature.TestingParallelism() in C:\BDDPracticeFramework\SnapDealTestProject\Features\SpecFlowFeature2.feature:line 6&#xD;
+--HttpRequestException&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+--WebException&#xD;
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext&amp; context)&#xD;
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)&#xD;
+--SocketException&#xD;
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)&#xD;
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)&#xD;
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+--TearDown&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 55&#xD;
+   at lambda_method(Closure , IContextManager )&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()&#xD;
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()&#xD;
+   at SnapDealTestProject.Features.SpecFlowFeature2Feature.TestTearDown()</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="VerifySnapDealHomePageHasAllNeceesaryIcons" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="cf572abd-d502-d2e0-ce09-3b856bfce869">
+      <Execution id="50190d15-6f70-4f43-87e8-64d5b1edebc4" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SnapDealFeature" name="VerifySnapDealHomePageHasAllNeceesaryIcons" />
+    </UnitTest>
+    <UnitTest name="TestingParallelism" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="e83985a7-806b-673d-f050-42bf5bc8beb3">
+      <Execution id="0c06274c-9e9f-4fe5-809e-b2fb217838fb" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SpecFlowFeature2Feature" name="TestingParallelism" />
+    </UnitTest>
+    <UnitTest name="VerifySortByFilterOptions" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="0c14bfb0-219d-c933-8de7-3315f1dd063d">
+      <Execution id="f003ea8c-7df5-4269-a700-f51dfd7a79e1" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SnapDealFeature" name="VerifySortByFilterOptions" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="0c14bfb0-219d-c933-8de7-3315f1dd063d" executionId="f003ea8c-7df5-4269-a700-f51dfd7a79e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf572abd-d502-d2e0-ce09-3b856bfce869" executionId="50190d15-6f70-4f43-87e8-64d5b1edebc4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e83985a7-806b-673d-f050-42bf5bc8beb3" executionId="0c06274c-9e9f-4fe5-809e-b2fb217838fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="0" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.2.0.0: Test execution started&#xD;
+Running all tests in C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.2.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="USE2DEVP00496" outcome="Warning" timestamp="2022-08-01T16:20:29.0831650+05:30">
+        <Text>Given I Open SnapDeal site&#xD;
+-&gt; skipped because of previous errors&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+System.NullReferenceException: Object reference not set to an instance of an object.&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 127&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 44&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="USE2DEVP00496" outcome="Warning" timestamp="2022-08-01T16:20:29.0881573+05:30">
+        <Text>Given I Open SnapDeal site&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify the icons displayed on the home page&#xD;
+-&gt; skipped because of previous errors&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+System.NullReferenceException: Object reference not set to an instance of an object.&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 127&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 44&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="USE2DEVP00496" outcome="Warning" timestamp="2022-08-01T16:20:31.1169587+05:30">
+        <Text>Given I Open SnapDeal site&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+System.NullReferenceException: Object reference not set to an instance of an object.&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.GetScreenshot(String path) in C:\BDDPracticeFramework\SnapDealTestProject\Library\DriverExtensions\WebDriverExtensions.cs:line 127&#xD;
+   at SnapDealTestProject.Hooks.Base.TearDown() in C:\BDDPracticeFramework\SnapDealTestProject\Hooks\Base.cs:line 44&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

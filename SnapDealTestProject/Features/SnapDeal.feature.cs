@@ -81,12 +81,20 @@ namespace SnapDealTestProject.Features
         [NUnit.Framework.DescriptionAttribute("Verify sort by filter options")]
         [NUnit.Framework.CategoryAttribute("Search")]
         [NUnit.Framework.CategoryAttribute("Cart")]
-        public void VerifySortByFilterOptions()
+        [NUnit.Framework.TestCaseAttribute("Price Low To High", null)]
+        [NUnit.Framework.TestCaseAttribute("Price High To Low", null)]
+        public void VerifySortByFilterOptions(string filter, string[] exampleTags)
         {
-            string[] tagsOfScenario = new string[] {
+            string[] @__tags = new string[] {
                     "Search",
                     "Cart"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("Filter", filter);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify sort by filter options", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
@@ -111,10 +119,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Then("I verify menu icon displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 10
- testRunner.When("I apply \'Price Low To High\' SortBy filter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("I apply \'{0}\' SortBy filter", filter), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
- testRunner.Then("I verify \'Price Low To High\' SortBy filter is applied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("I verify \'{0}\' SortBy filter is applied", filter), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -129,7 +137,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "HomePageIcons"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify SnapDeal home page has all neceesary icons", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 14
+#line 18
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -139,11 +147,64 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 15
+#line 19
  testRunner.Given("I Open SnapDeal site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 16
+#line 20
  testRunner.Then("I verify the icons displayed on the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verify sort by filter options using excel data")]
+        [NUnit.Framework.CategoryAttribute("Search")]
+        [NUnit.Framework.CategoryAttribute("Cart")]
+        [NUnit.Framework.CategoryAttribute("DataSource:../Resources/TestData/SortByFilterData.xlsx")]
+        [NUnit.Framework.TestCaseAttribute("Price Low To High", null)]
+        [NUnit.Framework.TestCaseAttribute("Price High To Low", null)]
+        public void VerifySortByFilterOptionsUsingExcelData(string filter, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "Search",
+                    "Cart",
+                    "DataSource:../Resources/TestData/SortByFilterData.xlsx"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("Filter", filter);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify sort by filter options using excel data", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 24
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 25
+ testRunner.Given("I Open SnapDeal site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 26
+ testRunner.Then("I verify search bar is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 27
+ testRunner.When("I search for \'Perfumes\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 28
+ testRunner.Then("I verify menu icon displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 29
+ testRunner.When(string.Format("I apply \'{0}\' SortBy filter", filter), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 30
+ testRunner.Then(string.Format("I verify \'{0}\' SortBy filter is applied", filter), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
