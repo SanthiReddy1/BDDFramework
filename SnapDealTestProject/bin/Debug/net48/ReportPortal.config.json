@@ -1,0 +1,17 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-nunit/master/src/ReportPortal.NUnitExtension/ReportPortal.config.schema",
+  "enabled": true,
+  "server": {
+    "url": "https://reportportal.epam.com/api/v1/",
+    "project": "SANTHI_KATREDDY_PERSONAL",
+    "authentication": {
+      "uuid": "bee4c158-dbfb-4b59-a761-0a9cb1f9f6d7"
+    }
+  },
+  "launch": {
+    "name": "BDD SpecFlow",
+    "description": "this is description",
+    "debugMode": false,
+    "attributes": [ "t1", "t2", "platform:x64" ]
+  }
+}

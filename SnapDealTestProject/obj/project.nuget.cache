@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "5FiTVpCQb+aMuQqKj+ZAkSDsBEg4tGVD0ehAgtwDmzUPlUNo6moI4JkDvnwaOQOGl2/uwzvxyblALOcLT5KMaA==",
+  "success": true,
+  "projectFilePath": "C:\\BDDPracticeFramework\\SnapDealTestProject\\SnapDealTestProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\C278249\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\fluentassertions\\6.2.0\\fluentassertions.6.2.0.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\gherkin\\19.0.3\\gherkin.19.0.3.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\log4net\\2.0.14\\log4net.2.0.14.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\microsoft.net.test.sdk\\17.0.0\\microsoft.net.test.sdk.17.0.0.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\reportportal.client\\3.0.6\\reportportal.client.3.0.6.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\reportportal.shared\\3.2.0\\reportportal.shared.3.2.0.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\reportportal.vstest.testlogger\\3.3.0\\reportportal.vstest.testlogger.3.3.0.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\selenium.support\\4.1.1\\selenium.support.4.1.1.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\selenium.webdriver\\4.1.1\\selenium.webdriver.4.1.1.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\specflow\\3.9.74\\specflow.3.9.74.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\specflow.externaldata\\3.9.74\\specflow.externaldata.3.9.74.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\specflow.internal.json\\1.0.8\\specflow.internal.json.1.0.8.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\specflow.nunit\\3.9.74\\specflow.nunit.3.9.74.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\specflow.plus.livingdocplugin\\3.9.57\\specflow.plus.livingdocplugin.3.9.57.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\specflow.tools.msbuild.generation\\3.9.74\\specflow.tools.msbuild.generation.3.9.74.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.0\\system.threading.tasks.extensions.4.5.0.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

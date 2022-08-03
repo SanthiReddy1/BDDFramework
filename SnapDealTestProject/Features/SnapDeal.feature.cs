@@ -159,16 +159,14 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify sort by filter options using excel data")]
-        [NUnit.Framework.CategoryAttribute("Search")]
-        [NUnit.Framework.CategoryAttribute("Cart")]
+        [NUnit.Framework.CategoryAttribute("Excel")]
         [NUnit.Framework.CategoryAttribute("DataSource:../Resources/TestData/SortByFilterData.xlsx")]
         [NUnit.Framework.TestCaseAttribute("Price Low To High", null)]
         [NUnit.Framework.TestCaseAttribute("Price High To Low", null)]
         public void VerifySortByFilterOptionsUsingExcelData(string filter, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "Search",
-                    "Cart",
+                    "Excel",
                     "DataSource:../Resources/TestData/SortByFilterData.xlsx"};
             if ((exampleTags != null))
             {

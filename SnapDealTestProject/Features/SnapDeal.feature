@@ -19,7 +19,7 @@ Scenario: Verify SnapDeal home page has all neceesary icons
 	Given I Open SnapDeal site
 	Then I verify the icons displayed on the home page
 
-@Search @Cart
+@Excel
 @DataSource:../Resources/TestData/SortByFilterData.xlsx
 Scenario: Verify sort by filter options using excel data
 	Given I Open SnapDeal site
