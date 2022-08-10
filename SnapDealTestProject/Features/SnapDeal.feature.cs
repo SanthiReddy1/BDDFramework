@@ -22,15 +22,13 @@ namespace SnapDealTestProject.Features
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("SnapDeal")]
     [NUnit.Framework.CategoryAttribute("SnapDeal")]
-    [NUnit.Framework.CategoryAttribute("Search")]
     public partial class SnapDealFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private static string[] featureTags = new string[] {
-                "SnapDeal",
-                "Search"};
+                "SnapDeal"};
         
 #line 1 "SnapDeal.feature"
 #line hidden

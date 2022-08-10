@@ -1,4 +1,4 @@
-﻿@SnapDeal @Search
+﻿@SnapDeal
 Feature: SnapDeal
 	
 @Search @Cart

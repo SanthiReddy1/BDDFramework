@@ -38,3 +38,4 @@ C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.csproj.CopyComplete
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.dll
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.pdb
+C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\ReportPortal.Log4Net.dll

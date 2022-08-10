@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5FiTVpCQb+aMuQqKj+ZAkSDsBEg4tGVD0ehAgtwDmzUPlUNo6moI4JkDvnwaOQOGl2/uwzvxyblALOcLT5KMaA==",
+  "dgSpecHash": "D6hyjxqk1W59EO1Ix9SimHm3qWxBNjOouTGvPjn3ZTnC3yMFqlxMLhu/rT75kmja6SdleKPJkKe1JOi1JwEI9A==",
   "success": true,
   "projectFilePath": "C:\\BDDPracticeFramework\\SnapDealTestProject\\SnapDealTestProject.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\C278249\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\C278249\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512",
     "C:\\Users\\C278249\\.nuget\\packages\\reportportal.client\\3.0.6\\reportportal.client.3.0.6.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\reportportal.log4net\\2.0.0\\reportportal.log4net.2.0.0.nupkg.sha512",
     "C:\\Users\\C278249\\.nuget\\packages\\reportportal.shared\\3.2.0\\reportportal.shared.3.2.0.nupkg.sha512",
     "C:\\Users\\C278249\\.nuget\\packages\\reportportal.vstest.testlogger\\3.3.0\\reportportal.vstest.testlogger.3.3.0.nupkg.sha512",
     "C:\\Users\\C278249\\.nuget\\packages\\selenium.support\\4.1.1\\selenium.support.4.1.1.nupkg.sha512",

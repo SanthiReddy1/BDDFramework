@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="32a2a673-86a1-49c1-934f-41500c6eb184" name="C278249@USE2DEVP00496 2022-08-04 11:35:43" runUser="EAD\C278249" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-08-04T11:35:43.2892495+05:30" queuing="2022-08-04T11:35:43.2892495+05:30" start="2022-08-04T11:35:23.3712260+05:30" finish="2022-08-04T11:36:09.1794793+05:30" />
+  <TestSettings name="default" id="60c6f9b4-f63c-4c67-9f9a-3fc113fa127a">
+    <Deployment runDeploymentRoot="C278249_USE2DEVP00496_2022-08-04_11_35_43" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="86055fa6-2220-4244-b1e9-5324c461861e" testId="8e0f11a9-14bd-9ab9-006a-2f5f5253209a" testName="VerifySortByFilterOptions(&quot;Price Low To High&quot;,null)" computerName="USE2DEVP00496" duration="00:00:21.6870000" startTime="2022-08-04T11:35:24.8152299+05:30" endTime="2022-08-04T11:35:46.5022479+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86055fa6-2220-4244-b1e9-5324c461861e">
+      <Output>
+        <StdOut>path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (6.7s)&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (1.6s)&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; done: SnapDealStepDefinitions.WhenISearchFor("Perfumes") (2.6s)&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifyMenuIconDisplayed() (0.5s)&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; done: SnapDealStepDefinitions.WhenIApplySortByFilter(PriceLowToHigh) (3.1s)&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySortByFilterIsApplied(PriceLowToHigh) (0.1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="066d219b-9953-4940-b6c4-99c113fb9277" testId="e83985a7-806b-673d-f050-42bf5bc8beb3" testName="TestingParallelism" computerName="USE2DEVP00496" duration="00:00:18.0380000" startTime="2022-08-04T11:35:24.8152299+05:30" endTime="2022-08-04T11:35:42.8522464+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="066d219b-9953-4940-b6c4-99c113fb9277">
+      <Output>
+        <StdOut>path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (7.7s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c1e877a0-a642-4665-949a-e5eb1fd20bfa" testId="f6086eae-b56d-43b6-0ca7-dd94dbd107cf" testName="VerifySortByFilterOptions(&quot;Price High To Low&quot;,null)" computerName="USE2DEVP00496" duration="00:00:22.3620000" startTime="2022-08-04T11:35:46.5032486+05:30" endTime="2022-08-04T11:36:08.8654839+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1e877a0-a642-4665-949a-e5eb1fd20bfa">
+      <Output>
+        <StdOut>path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (4.2s)&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (0.2s)&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; done: SnapDealStepDefinitions.WhenISearchFor("Perfumes") (8.7s)&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifyMenuIconDisplayed() (0.1s)&#xD;
+When I apply 'Price High To Low' SortBy filter&#xD;
+-&gt; done: SnapDealStepDefinitions.WhenIApplySortByFilter(PriceHighToLow) (0.8s)&#xD;
+Then I verify 'Price High To Low' SortBy filter is applied&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySortByFilterIsApplied(PriceHighToLow) (0.7s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="VerifySortByFilterOptions(&quot;Price Low To High&quot;,null)" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="8e0f11a9-14bd-9ab9-006a-2f5f5253209a">
+      <Execution id="86055fa6-2220-4244-b1e9-5324c461861e" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SnapDealFeature" name="VerifySortByFilterOptions(&quot;Price Low To High&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="VerifySortByFilterOptions(&quot;Price High To Low&quot;,null)" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="f6086eae-b56d-43b6-0ca7-dd94dbd107cf">
+      <Execution id="c1e877a0-a642-4665-949a-e5eb1fd20bfa" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SnapDealFeature" name="VerifySortByFilterOptions(&quot;Price High To Low&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="TestingParallelism" storage="c:\bddpracticeframework\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="e83985a7-806b-673d-f050-42bf5bc8beb3">
+      <Execution id="066d219b-9953-4940-b6c4-99c113fb9277" />
+      <TestMethod codeBase="C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SpecFlowFeature2Feature" name="TestingParallelism" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="8e0f11a9-14bd-9ab9-006a-2f5f5253209a" executionId="86055fa6-2220-4244-b1e9-5324c461861e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e83985a7-806b-673d-f050-42bf5bc8beb3" executionId="066d219b-9953-4940-b6c4-99c113fb9277" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f6086eae-b56d-43b6-0ca7-dd94dbd107cf" executionId="c1e877a0-a642-4665-949a-e5eb1fd20bfa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.2.0.0: Test execution started&#xD;
+Running selected tests in C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.2.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="USE2DEVP00496" outcome="Warning" timestamp="2022-08-04T11:35:42.8702433+05:30">
+        <Text>path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (7.7s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="USE2DEVP00496" outcome="Warning" timestamp="2022-08-04T11:35:46.5042506+05:30">
+        <Text>path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (6.7s)&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (1.6s)&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; done: SnapDealStepDefinitions.WhenISearchFor("Perfumes") (2.6s)&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifyMenuIconDisplayed() (0.5s)&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; done: SnapDealStepDefinitions.WhenIApplySortByFilter(PriceLowToHigh) (3.1s)&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySortByFilterIsApplied(PriceLowToHigh) (0.1s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="USE2DEVP00496" outcome="Warning" timestamp="2022-08-04T11:36:08.8744813+05:30">
+        <Text>path is: C:\BDDPracticeFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (4.2s)&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (0.2s)&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; done: SnapDealStepDefinitions.WhenISearchFor("Perfumes") (8.7s)&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifyMenuIconDisplayed() (0.1s)&#xD;
+When I apply 'Price High To Low' SortBy filter&#xD;
+-&gt; done: SnapDealStepDefinitions.WhenIApplySortByFilter(PriceHighToLow) (0.8s)&#xD;
+Then I verify 'Price High To Low' SortBy filter is applied&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySortByFilterIsApplied(PriceHighToLow) (0.7s)&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

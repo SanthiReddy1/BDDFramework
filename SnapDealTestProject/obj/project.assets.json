@@ -140,6 +140,19 @@
           "build/net45/ReportPortal.Client.targets": {}
         }
       },
+      "ReportPortal.Log4Net/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "ReportPortal.Shared": "3.0.0",
+          "log4net": "2.0.8"
+        },
+        "compile": {
+          "lib/net45/ReportPortal.Log4Net.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ReportPortal.Log4Net.dll": {}
+        }
+      },
       "ReportPortal.Shared/3.2.0": {
         "type": "package",
         "dependencies": {
@@ -607,6 +620,19 @@
         "lib/netstandard2.0/ReportPortal.Client.xml",
         "reportportal.client.3.0.6.nupkg.sha512",
         "reportportal.client.nuspec"
+      ]
+    },
+    "ReportPortal.Log4Net/2.0.0": {
+      "sha512": "n9NbLic5X5vcpIOG1akH9d4+mhSFN31mSW33T0eK9mMS4b9X0X8IGwe97NpQmyifHdka28ryzD5mZ+8CjfL7MA==",
+      "type": "package",
+      "path": "reportportal.log4net/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/ReportPortal.Log4Net.dll",
+        "lib/netstandard2.0/ReportPortal.Log4Net.dll",
+        "reportportal.log4net.2.0.0.nupkg.sha512",
+        "reportportal.log4net.nuspec"
       ]
     },
     "ReportPortal.Shared/3.2.0": {
@@ -1302,6 +1328,7 @@
       "NUnit >= 3.13.3",
       "NUnit3TestAdapter >= 4.2.1",
       "ReportPortal.Client >= 3.0.6",
+      "ReportPortal.Log4Net >= 2.0.0",
       "ReportPortal.Shared >= 3.2.0",
       "ReportPortal.VSTest.TestLogger >= 3.3.0",
       "Selenium.Support >= 4.1.1",
@@ -1379,6 +1406,10 @@
           "ReportPortal.Client": {
             "target": "Package",
             "version": "[3.0.6, )"
+          },
+          "ReportPortal.Log4Net": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "ReportPortal.Shared": {
             "target": "Package",
