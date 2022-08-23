@@ -32,10 +32,10 @@ C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\SpecFlow.Internal.Js
 C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\System.Runtime.CompilerServices.Unsafe.dll
 C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\System.Threading.Tasks.Extensions.dll
 C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\System.ValueTuple.dll
-C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.csprojAssemblyReference.cache
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.dll.config
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.csproj.CoreCompileInputs.cache
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.csproj.CopyComplete
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.dll
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.pdb
 C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\ReportPortal.Log4Net.dll
+C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.csprojAssemblyReference.cache

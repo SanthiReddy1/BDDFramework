@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="cb861939-1f2e-4554-8e2f-37d9644c5bf7" name="USE2DEVP00496$@USE2DEVP00496 2022-08-10 17:41:58" runUser="NT AUTHORITY\SYSTEM" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-08-10T17:41:58.7462384+05:30" queuing="2022-08-10T17:41:58.7462384+05:30" start="2022-08-10T17:41:38.6173549+05:30" finish="2022-08-10T17:42:27.4036414+05:30" />
+  <TestSettings name="default" id="efdc620f-52e9-4386-b3e9-47959e9712f9">
+    <Deployment runDeploymentRoot="USE2DEVP00496$_USE2DEVP00496_2022-08-10_17_41_58" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="e902f5d8-139d-4f50-b572-4f3b7df12c8c" testId="f6086eae-b56d-43b6-0ca7-dd94dbd107cf" testName="VerifySortByFilterOptions(&quot;Price High To Low&quot;,null)" computerName="USE2DEVP00496" duration="00:00:18.8650000" startTime="2022-08-10T17:42:07.7262516+05:30" endTime="2022-08-10T17:42:26.5906382+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e902f5d8-139d-4f50-b572-4f3b7df12c8c">
+      <Output>
+        <StdOut>path is: C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (3.8s)&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (0.1s)&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; error: unknown error: cannot determine loading status&#xD;
+from unknown error: unexpected command response&#xD;
+  (Session info: chrome=104.0.5112.81) (6.5s)&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I apply 'Price High To Low' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify 'Price High To Low' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+path is: C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject&#xD;
+Screenshot: file:///C:/ProgramData/Jenkins/.jenkins/workspace/BDDSpecFlowFramework/SnapDealTestProject/Screenshots/Verifysortbyfilteroptions_08-10-2022-05-42-22_ERROR.png</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : unknown error: cannot determine loading status&#xD;
+from unknown error: unexpected command response&#xD;
+  (Session info: chrome=104.0.5112.81)</Message>
+          <StackTrace>   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions(String filter, String[] exampleTags) in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7b709bc2-5eed-4605-9ee4-327c3d2f2974" testId="8e0f11a9-14bd-9ab9-006a-2f5f5253209a" testName="VerifySortByFilterOptions(&quot;Price Low To High&quot;,null)" computerName="USE2DEVP00496" duration="00:00:27.4010000" startTime="2022-08-10T17:41:40.3153744+05:30" endTime="2022-08-10T17:42:07.7162529+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b709bc2-5eed-4605-9ee4-327c3d2f2974">
+      <Output>
+        <StdOut>path is: C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (6.8s)&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (0.2s)&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; error: unknown error: cannot determine loading status&#xD;
+from unknown error: unexpected command response&#xD;
+  (Session info: chrome=104.0.5112.81) (8.3s)&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+path is: C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject&#xD;
+Screenshot: file:///C:/ProgramData/Jenkins/.jenkins/workspace/BDDSpecFlowFramework/SnapDealTestProject/Screenshots/Verifysortbyfilteroptions_08-10-2022-05-42-03_ERROR.png</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : unknown error: cannot determine loading status&#xD;
+from unknown error: unexpected command response&#xD;
+  (Session info: chrome=104.0.5112.81)</Message>
+          <StackTrace>   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at SnapDealTestProject.Library.Extensions.DriverExtensions.Click(By elementBy) in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject\Library\DriverExtensions\ClickExtensions.cs:line 16&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.ClickSearchButton[T]() in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 82&#xD;
+   at SnapDealTestProject.Components.HeaderComponent.EnterSearchQueryAndClickSearch[T](String searchText) in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject\Components\HeaderComponent.cs:line 43&#xD;
+   at SnapDealTestProject.Steps.SnapDealStepDefinitions.WhenISearchFor(String product) in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject\Steps\SnapDealStepDefinitions.cs:line 34&#xD;
+   at lambda_method(Closure , IContextManager , String )&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.ScenarioCleanup()&#xD;
+   at SnapDealTestProject.Features.SnapDealFeature.VerifySortByFilterOptions(String filter, String[] exampleTags) in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject\Features\SnapDeal.feature:line 11</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="16d1eca5-dc57-45d3-af61-101d35a20773" testId="e83985a7-806b-673d-f050-42bf5bc8beb3" testName="TestingParallelism" computerName="USE2DEVP00496" duration="00:00:17.4560000" startTime="2022-08-10T17:41:40.3113716+05:30" endTime="2022-08-10T17:41:57.7672350+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16d1eca5-dc57-45d3-af61-101d35a20773">
+      <Output>
+        <StdOut>path is: C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (6.2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="VerifySortByFilterOptions(&quot;Price Low To High&quot;,null)" storage="c:\programdata\jenkins\.jenkins\workspace\bddspecflowframework\.\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="8e0f11a9-14bd-9ab9-006a-2f5f5253209a">
+      <Execution id="7b709bc2-5eed-4605-9ee4-327c3d2f2974" />
+      <TestMethod codeBase="C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\.\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SnapDealFeature" name="VerifySortByFilterOptions(&quot;Price Low To High&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="VerifySortByFilterOptions(&quot;Price High To Low&quot;,null)" storage="c:\programdata\jenkins\.jenkins\workspace\bddspecflowframework\.\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="f6086eae-b56d-43b6-0ca7-dd94dbd107cf">
+      <Execution id="e902f5d8-139d-4f50-b572-4f3b7df12c8c" />
+      <TestMethod codeBase="C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\.\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SnapDealFeature" name="VerifySortByFilterOptions(&quot;Price High To Low&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="TestingParallelism" storage="c:\programdata\jenkins\.jenkins\workspace\bddspecflowframework\.\snapdealtestproject\bin\debug\net48\snapdealtestproject.dll" id="e83985a7-806b-673d-f050-42bf5bc8beb3">
+      <Execution id="16d1eca5-dc57-45d3-af61-101d35a20773" />
+      <TestMethod codeBase="C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\.\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SnapDealTestProject.Features.SpecFlowFeature2Feature" name="TestingParallelism" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="f6086eae-b56d-43b6-0ca7-dd94dbd107cf" executionId="e902f5d8-139d-4f50-b572-4f3b7df12c8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e0f11a9-14bd-9ab9-006a-2f5f5253209a" executionId="7b709bc2-5eed-4605-9ee4-327c3d2f2974" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e83985a7-806b-673d-f050-42bf5bc8beb3" executionId="16d1eca5-dc57-45d3-af61-101d35a20773" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="1" failed="2" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.2.0.0: Test execution started&#xD;
+Running selected tests in C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\.\SnapDealTestProject\bin\Debug\net48\SnapDealTestProject.dll&#xD;
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.2.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="USE2DEVP00496" outcome="Warning" timestamp="2022-08-10T17:41:57.7852361+05:30">
+        <Text>path is: C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (6.2s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="USE2DEVP00496" outcome="Warning" timestamp="2022-08-10T17:42:07.7182499+05:30">
+        <Text>path is: C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (6.8s)&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (0.2s)&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; error: unknown error: cannot determine loading status&#xD;
+from unknown error: unexpected command response&#xD;
+  (Session info: chrome=104.0.5112.81) (8.3s)&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I apply 'Price Low To High' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify 'Price Low To High' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+path is: C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject&#xD;
+Screenshot: file:///C:/ProgramData/Jenkins/.jenkins/workspace/BDDSpecFlowFramework/SnapDealTestProject/Screenshots/Verifysortbyfilteroptions_08-10-2022-05-42-03_ERROR.png&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="USE2DEVP00496" outcome="Warning" timestamp="2022-08-10T17:42:26.5926429+05:30">
+        <Text>path is: C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject&#xD;
+Given I Open SnapDeal site&#xD;
+-&gt; done: SnapDealStepDefinitions.GivenIOpenSnapDealSite() (3.8s)&#xD;
+Then I verify search bar is displayed&#xD;
+-&gt; done: SnapDealStepDefinitions.ThenIVerifySearchBarIsDisplayed() (0.1s)&#xD;
+When I search for 'Perfumes'&#xD;
+-&gt; error: unknown error: cannot determine loading status&#xD;
+from unknown error: unexpected command response&#xD;
+  (Session info: chrome=104.0.5112.81) (6.5s)&#xD;
+Then I verify menu icon displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I apply 'Price High To Low' SortBy filter&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I verify 'Price High To Low' SortBy filter is applied&#xD;
+-&gt; skipped because of previous errors&#xD;
+path is: C:\ProgramData\Jenkins\.jenkins\workspace\BDDSpecFlowFramework\SnapDealTestProject&#xD;
+Screenshot: file:///C:/ProgramData/Jenkins/.jenkins/workspace/BDDSpecFlowFramework/SnapDealTestProject/Screenshots/Verifysortbyfilteroptions_08-10-2022-05-42-22_ERROR.png&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
