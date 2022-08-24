@@ -25,6 +25,7 @@ C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\log4net.dll
 C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\Microsoft.Office.Interop.Excel.dll
 C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\nunit.framework.dll
+C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\ReportPortal.Log4Net.dll
 C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\WebDriver.Support.dll
 C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\WebDriver.dll
 C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\TechTalk.SpecFlow.dll
@@ -37,5 +38,4 @@ C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.csproj.CopyComplete
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.dll
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.pdb
-C:\BDDPracticeFramework\SnapDealTestProject\bin\Debug\net48\ReportPortal.Log4Net.dll
 C:\BDDPracticeFramework\SnapDealTestProject\obj\Debug\net48\SnapDealTestProject.csprojAssemblyReference.cache

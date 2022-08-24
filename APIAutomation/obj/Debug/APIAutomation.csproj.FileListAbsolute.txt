@@ -56,3 +56,12 @@ C:\BDDPracticeFramework\APIAutomation\obj\Debug\APIAutomation.csproj.CoreCompile
 C:\BDDPracticeFramework\APIAutomation\obj\Debug\APIAutomation.csproj.CopyComplete
 C:\BDDPracticeFramework\APIAutomation\obj\Debug\APIAutomation.dll
 C:\BDDPracticeFramework\APIAutomation\obj\Debug\APIAutomation.pdb
+C:\BDDPracticeFramework\APIAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\BDDPracticeFramework\APIAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\BDDPracticeFramework\APIAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\BDDPracticeFramework\APIAutomation\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\BDDPracticeFramework\APIAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\BDDPracticeFramework\APIAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\BDDPracticeFramework\APIAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\BDDPracticeFramework\APIAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\BDDPracticeFramework\APIAutomation\bin\Debug\Resources\TestData\GoogleMaps\AddPlaceRequestData.xml

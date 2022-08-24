@@ -1,10 +1,12 @@
 ﻿namespace APIAutomation.Endpoints.MapsService
 {
+    using System.Net;
+
     using APIAutomation.Interfaces;
 
     using Framework.Common.Api.Utilities;
 
-    using NUnit.Framework;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     using RestSharp;
 
@@ -12,7 +14,11 @@
 
     public class Base
     {
-        protected string BaseUrl;
+        public string BaseUrl;
+
+        protected CookieContainer Cookies;
+
+        protected RestClientOptions RestClientOptions;
 
         protected RestClient RestClient;
 
@@ -22,18 +28,16 @@
 
         public QualityTestCase QualityTestCase { get; set; }
 
-        public Base()
-        {
-            this.BaseUrl = "https://rahulshettyacademy.com/";
+        public TestContext TestContext { get; set; }
 
-            this.RestClient = new RestClient(this.BaseUrl);
-            this.RequestBuilder = new RequestBuilder();
-        }
-
-        [SetUp]
-        public void setUp()
+        [TestInitialize]
+        public void SetUp()
         {
             this.QualityTestCase = new QualityTestCase();
+            this.Cookies = Cookies ?? new CookieContainer();
+            this.RestClientOptions = new RestClientOptions(this.BaseUrl) { CookieContainer = this.Cookies };
+            this.RestClient = new RestClient(this.RestClientOptions);
+            this.RequestBuilder = new RequestBuilder();
         }
     }
 }

@@ -1,26 +1,33 @@
-﻿using APIAutomation.Endpoints;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-
-namespace APIAutomation.Tests
+﻿namespace APIAutomation.Tests
 {
+    using System;
+    using System.Collections.Generic;
     using System.Net;
 
     using APIAutomation.DataModel;
+    using APIAutomation.Endpoints;
     using APIAutomation.Utilities;
-
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using RestSharp;
     using SnapDealTestProject.Utils.Assertions;
 
+    [TestClass]
     public class GoogleMapsTests : GoogleMapsServiceClient
     {
-        [Test]
-        [Category("API")]
+        [TestMethod]
+        [TestCategory("API")]
+        [DeploymentItem(@"Resources/TestData/GoogleMaps/AddPlaceRequestData.xml")]
+        [DataSource(
+            "Microsoft.VisualStudio.TestTools.DataSource.XML",
+            "|DataDirectory|\\AddPlaceRequestData.xml",
+            "testData",
+            DataAccessMethod.Sequential)]
         public void VerifyPlaceHasBeenProperlyUpdated()
         {
             const string UpdatedAddress = "70 winter walk, USA";
-
+            string name = this.TestContext.DataRow["Name"].ToString();
+            string placeAddress = this.TestContext.DataRow["Address"].ToString();
+            
             QualityCheck placeAddedSuccessfullyCheck = new QualityCheck("Verify place has been added successfully");
             QualityCheck placeUpdatedSuccessfullyCheck = new QualityCheck("Verify place has been updated successfully");
             QualityCheck placeRetrievedSuccessfullyCheck = new QualityCheck("Verify place has been retrieved successfully");
@@ -28,7 +35,7 @@ namespace APIAutomation.Tests
             this.QualityTestCase.AddQualityChecks(placeAddedSuccessfullyCheck, placeUpdatedSuccessfullyCheck, placeRetrievedSuccessfullyCheck);
             
             //Add Place
-            RestResponse addPlaceResponse = this.AddPlace(this.createPlaceRequestBody());
+            RestResponse addPlaceResponse = this.AddPlace(this.createPlaceRequestBody(name, placeAddress));
             Console.WriteLine(addPlaceResponse.Content);
             QualityVerify.IsTrue(
                 placeAddedSuccessfullyCheck,
@@ -61,16 +68,16 @@ namespace APIAutomation.Tests
                 "Address of the place has not been updated successfully");
         }
 
-        private CreatePlaceBodyDataModel createPlaceRequestBody()
+        private CreatePlaceBodyDataModel createPlaceRequestBody(string name, string address)
         {
             LocationDataModel locationDataModel = new LocationDataModel(-38.383494, 33.427362);
             CreatePlaceBodyDataModel createPlaceBodyDataModel = new CreatePlaceBodyDataModel
                                                                     {
                                                                         location = locationDataModel,
-                                                                        name = "Frontline house",
+                                                                        name = name,
                                                                         accuracy = 50,
                                                                         phone_number = "(+91) 983 893 3937",
-                                                                        address = "UMKC, Kansas City, Missourie",
+                                                                        address = address,
                                                                         types = new List<string> { "shoe park", "shop" },
                                                                         website = "http://google.com",
                                                                         language = "French-IN"

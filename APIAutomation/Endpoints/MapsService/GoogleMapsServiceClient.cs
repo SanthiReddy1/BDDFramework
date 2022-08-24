@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace APIAutomation.Endpoints
+﻿namespace APIAutomation.Endpoints
 {
-    using System.Collections.Specialized;
-
     using APIAutomation.DataModel;
     using APIAutomation.Endpoints.MapsService;
-    using APIAutomation.Interfaces;
-    using APIAutomation.Utilities;
 
     using Framework.Common.Api.Utilities;
 
@@ -19,6 +9,11 @@ namespace APIAutomation.Endpoints
 
     public class GoogleMapsServiceClient : Base
     {
+        public GoogleMapsServiceClient()
+        {
+            this.BaseUrl = "https://rahulshettyacademy.com/";
+        }
+
         public RestResponse AddPlace(CreatePlaceBodyDataModel data)
         {
             string url = "maps/api/place/add/json";
